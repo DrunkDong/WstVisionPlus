@@ -1,0 +1,1541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_Project.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_Project.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 22pt, style=Bold</value>
+  </data>
+  <data name="label_Project.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1193, 26</value>
+  </data>
+  <data name="label_Project.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 37</value>
+  </data>
+  <data name="label_Project.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="label_Project.Text" xml:space="preserve">
+    <value>Project：</value>
+  </data>
+  <data name="&gt;&gt;label_Project.Name" xml:space="preserve">
+    <value>label_Project</value>
+  </data>
+  <data name="&gt;&gt;label_Project.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Project.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label_Project.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.Name" xml:space="preserve">
+    <value>uiHeaderButton_UserManage</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_CommunicateSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.Name" xml:space="preserve">
+    <value>uiHeaderButton_Data</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_SystemSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_CameraSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_ProjectSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.Name" xml:space="preserve">
+    <value>uiHeaderButton_Project</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel_BtnList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 2</value>
+  </data>
+  <data name="panel_BtnList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>646, 81</value>
+  </data>
+  <data name="panel_BtnList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_BtnList.Name" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;panel_BtnList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_BtnList.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel_BtnList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 85</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 0</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="uiHeaderButton_UserManage.Text" xml:space="preserve">
+    <value>用户列表</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.Name" xml:space="preserve">
+    <value>uiHeaderButton_UserManage</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_UserManage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 0</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Text" xml:space="preserve">
+    <value>通讯设定</value>
+  </data>
+  <data name="uiHeaderButton_CommunicateSet.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_CommunicateSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CommunicateSet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiHeaderButton_Data.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_Data.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiHeaderButton_Data.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 0</value>
+  </data>
+  <data name="uiHeaderButton_Data.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_Data.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_Data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_Data.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="uiHeaderButton_Data.Text" xml:space="preserve">
+    <value>生产数据</value>
+  </data>
+  <data name="uiHeaderButton_Data.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.Name" xml:space="preserve">
+    <value>uiHeaderButton_Data</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Data.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 0</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="uiHeaderButton_SystemSet.Text" xml:space="preserve">
+    <value>系统设定</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_SystemSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_SystemSet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 0</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="uiHeaderButton_CameraSet.Text" xml:space="preserve">
+    <value>相机设定</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_CameraSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_CameraSet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 0</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="uiHeaderButton_ProjectSet.Text" xml:space="preserve">
+    <value>参数设定</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.Name" xml:space="preserve">
+    <value>uiHeaderButton_ProjectSet</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_ProjectSet.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="uiHeaderButton_Project.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="uiHeaderButton_Project.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="uiHeaderButton_Project.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="uiHeaderButton_Project.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_Project.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_Project.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="uiHeaderButton_Project.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="uiHeaderButton_Project.Text" xml:space="preserve">
+    <value>项目列表</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.Name" xml:space="preserve">
+    <value>uiHeaderButton_Project</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.Parent" xml:space="preserve">
+    <value>panel_BtnList</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Project.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.Name" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.Type" xml:space="preserve">
+    <value>Sunny.UI.UITitlePanel, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.Name" xml:space="preserve">
+    <value>uiTitlePanel1</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.Type" xml:space="preserve">
+    <value>Sunny.UI.UITitlePanel, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="uiPanel_Control.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiPanel_Control.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1288, 120</value>
+  </data>
+  <data name="uiPanel_Control.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiPanel_Control.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiPanel_Control.Size" type="System.Drawing.Size, System.Drawing">
+    <value>632, 918</value>
+  </data>
+  <data name="uiPanel_Control.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="uiPanel_Control.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;uiPanel_Control.Name" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;uiPanel_Control.Type" xml:space="preserve">
+    <value>Sunny.UI.UIPanel, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiPanel_Control.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiPanel_Control.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 405</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 41</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 412</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 30</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 442</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 41</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 395</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 41</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.Name" xml:space="preserve">
+    <value>label_Percent</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_NG.Name" xml:space="preserve">
+    <value>label_NG</value>
+  </data>
+  <data name="&gt;&gt;label_NG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_NG.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label_NG.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.Name" xml:space="preserve">
+    <value>label5_OK</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_All.Name" xml:space="preserve">
+    <value>label_All</value>
+  </data>
+  <data name="&gt;&gt;label_All.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_All.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label_All.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="uiTitlePanel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 14pt</value>
+  </data>
+  <data name="uiTitlePanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 2</value>
+  </data>
+  <data name="uiTitlePanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTitlePanel3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiTitlePanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>625, 351</value>
+  </data>
+  <data name="uiTitlePanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="uiTitlePanel3.Text" xml:space="preserve">
+    <value>提示窗口</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.Name" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.Type" xml:space="preserve">
+    <value>Sunny.UI.UITitlePanel, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_Percent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 24pt</value>
+  </data>
+  <data name="label_Percent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 98</value>
+  </data>
+  <data name="label_Percent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 58</value>
+  </data>
+  <data name="label_Percent.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label_Percent.Text" xml:space="preserve">
+    <value>良品率：</value>
+  </data>
+  <data name="label_Percent.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.Name" xml:space="preserve">
+    <value>label_Percent</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label_Percent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_NG.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 24pt</value>
+  </data>
+  <data name="label_NG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 98</value>
+  </data>
+  <data name="label_NG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 58</value>
+  </data>
+  <data name="label_NG.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label_NG.Text" xml:space="preserve">
+    <value>不良数：</value>
+  </data>
+  <data name="label_NG.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label_NG.Name" xml:space="preserve">
+    <value>label_NG</value>
+  </data>
+  <data name="&gt;&gt;label_NG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_NG.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label_NG.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label5_OK.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 24pt</value>
+  </data>
+  <data name="label5_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 37</value>
+  </data>
+  <data name="label5_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 58</value>
+  </data>
+  <data name="label5_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label5_OK.Text" xml:space="preserve">
+    <value>良品数：</value>
+  </data>
+  <data name="label5_OK.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.Name" xml:space="preserve">
+    <value>label5_OK</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label5_OK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_All.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 24pt</value>
+  </data>
+  <data name="label_All.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 37</value>
+  </data>
+  <data name="label_All.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 58</value>
+  </data>
+  <data name="label_All.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label_All.Text" xml:space="preserve">
+    <value>总数：</value>
+  </data>
+  <data name="label_All.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label_All.Name" xml:space="preserve">
+    <value>label_All</value>
+  </data>
+  <data name="&gt;&gt;label_All.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_All.Parent" xml:space="preserve">
+    <value>uiTitlePanel3</value>
+  </data>
+  <data name="&gt;&gt;label_All.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.Name" xml:space="preserve">
+    <value>panel_MessageBox</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.Parent" xml:space="preserve">
+    <value>uiTitlePanel1</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiTitlePanel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 14pt</value>
+  </data>
+  <data name="uiTitlePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 630</value>
+  </data>
+  <data name="uiTitlePanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTitlePanel1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiTitlePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>623, 285</value>
+  </data>
+  <data name="uiTitlePanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uiTitlePanel1.Text" xml:space="preserve">
+    <value>运行信息</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.Name" xml:space="preserve">
+    <value>uiTitlePanel1</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.Type" xml:space="preserve">
+    <value>Sunny.UI.UITitlePanel, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.Parent" xml:space="preserve">
+    <value>uiPanel_Control</value>
+  </data>
+  <data name="&gt;&gt;uiTitlePanel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel_MessageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 38</value>
+  </data>
+  <data name="panel_MessageBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 244</value>
+  </data>
+  <data name="panel_MessageBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.Name" xml:space="preserve">
+    <value>panel_MessageBox</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.Parent" xml:space="preserve">
+    <value>uiTitlePanel1</value>
+  </data>
+  <data name="&gt;&gt;panel_MessageBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.Name" xml:space="preserve">
+    <value>Panel_Camera</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1282, 692</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>uiPanel_CameraBody</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Panel_Camera.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Panel_Camera.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="Panel_Camera.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1276, 686</value>
+  </data>
+  <data name="Panel_Camera.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.Name" xml:space="preserve">
+    <value>Panel_Camera</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel_Camera.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dataGridView_LineList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 700</value>
+  </data>
+  <data name="dataGridView_LineList.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dataGridView_LineList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1281, 218</value>
+  </data>
+  <data name="dataGridView_LineList.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_LineList.Name" xml:space="preserve">
+    <value>dataGridView_LineList</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_LineList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_LineList.Parent" xml:space="preserve">
+    <value>uiPanel_CameraBody</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_LineList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiPanel_CameraBody.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiPanel_CameraBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 120</value>
+  </data>
+  <data name="uiPanel_CameraBody.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiPanel_CameraBody.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiPanel_CameraBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1286, 918</value>
+  </data>
+  <data name="uiPanel_CameraBody.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="uiPanel_CameraBody.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;uiPanel_CameraBody.Name" xml:space="preserve">
+    <value>uiPanel_CameraBody</value>
+  </data>
+  <data name="&gt;&gt;uiPanel_CameraBody.Type" xml:space="preserve">
+    <value>Sunny.UI.UIPanel, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiPanel_CameraBody.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiPanel_CameraBody.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiHeaderButton_Run.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="uiHeaderButton_Run.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiHeaderButton_Run.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 0</value>
+  </data>
+  <data name="uiHeaderButton_Run.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_Run.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_Run.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 82</value>
+  </data>
+  <data name="uiHeaderButton_Run.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="uiHeaderButton_Run.Text" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Run.Name" xml:space="preserve">
+    <value>uiHeaderButton_Run</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Run.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Run.Parent" xml:space="preserve">
+    <value>panel_ControlBox</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Run.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 0</value>
+  </data>
+  <data name="uiHeaderButton_Stop.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 8, 0, 3</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 82</value>
+  </data>
+  <data name="uiHeaderButton_Stop.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="uiHeaderButton_Stop.Text" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Stop.Name" xml:space="preserve">
+    <value>uiHeaderButton_Stop</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Stop.Type" xml:space="preserve">
+    <value>Sunny.UI.UIHeaderButton, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Stop.Parent" xml:space="preserve">
+    <value>panel_ControlBox</value>
+  </data>
+  <data name="&gt;&gt;uiHeaderButton_Stop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_ControlBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1716, 35</value>
+  </data>
+  <data name="panel_ControlBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 82</value>
+  </data>
+  <data name="panel_ControlBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel_ControlBox.Name" xml:space="preserve">
+    <value>panel_ControlBox</value>
+  </data>
+  <data name="&gt;&gt;panel_ControlBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_ControlBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_ControlBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="timer_Refresh.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>14, 7</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>35</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 1040</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADclhES2pYRWtuWEZHalRG325US29qW
+        EvfblhLj2pUSx9uVEqnalRFs25MTGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/4AAANqVEWjblhHD25YS+9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEvvblhHB2pYSSgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        Ev/blRHFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANmV
+        EkDZlRJA2ZUSQNmVEiAAAAAAAAAAANqVETbblhL/25YS/9qVEoUAAAAA2ZUSINqWEnYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAANqVEl7blhL/25YS/9qWEkoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADalRK/25YS/9uWEv/blhEqAAAAAAAAAADblhGp25YS/9uWEufYlxMQAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgmRQG2pUS2duWEv/blhG/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2pUSv9uWEv/blhL/25cQEAAAAADclhQM25YS9duW
+        Ev/blRKBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADblxAM2pYSeNuVEaMAAAAAAAAAANuWEmzblhL/25YS+9qV
+        ExYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADbkxAg25YS/9uWEv/ZlRJAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADblhL/25YS/9uWEn4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25MQINuWEv/blhL/2ZUSQAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25YS/9uWEv/blhJ+AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANuT
+        ECDblhL/25YS/9mVEkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANuW
+        Ev/blhL/25YSfgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADbkxAg25YS/9uWEv/ZlRJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADblhL/25YS/9qVEpcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25UQPNuWEv/blhL/2ZUSQAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25YR9duWEv/blhHv2pUSn9uWEn7blhJ+25YSftuW
+        En7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuW
+        En7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuW
+        En7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25YSftuWEn7blhJ+25UShduVEdnblhL/25YS/9mV
+        EjwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANuWEbnblhL/25YS/9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uW
+        Ev/blhL/25YS/9uWEvXblRMWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADZlRIg25YStduWEvfblhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uWEv/blhL/25YS/9uW
+        Ev/blhL/25YS/9uWEv/blhL/25YS/9uVEtXblhJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////////////////////wH////////4AD///////+AA
+        D///////w8+H///8AA+Pz+H///wAHh//8P///AA+H//gf/////wP/+R/////+J///j/////4////P///
+        /HH///8f///8cf//+5////xz///jn/wAAGP//4GP8AAAY//+AY/wAABg//gBj/H//+D/8AGP8///4//g
+        AY/z///j/8ABj/P//+P/wAGP8///8/+AA5/z///x/4ADH/P///H/AAcf8///+P8ABz/z///4ngAOP/P/
+        //weABx/8////jwAeP/z//h/HwPw//P/8D+H/+H/8//wP8P/h//z7/Af4AAO//PH4B/4ADz/84PjH/8B
+        /P/zwcMP///8//Pgx4////z/8/AHh/P//P/z+AfH4f/8//P8D8Pg//z/8/4P48B//P/z/x/hgD/8//P/
+        3/GMH/z/8///8A4P/P/z///wHwf8//P///g/g/z/8///+D/B/P/z/////+H8//P/////8/z/8///////
+        /P/z///////8//P///////z/8////////P/z///////8//H///////z/8P//////8P/wAAAAAAAA//gA
+        AAAAAAH///////////////////////////////////////////8=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;timer_Refresh.Name" xml:space="preserve">
+    <value>timer_Refresh</value>
+  </data>
+  <data name="&gt;&gt;timer_Refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Sunny.UI.UIForm, SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+</root>

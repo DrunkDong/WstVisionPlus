@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{416E10D9-ED71-4FF8-A19E-6C369025AB3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WstControls</RootNamespace>
+    <AssemblyName>WstControls</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gCursor">
+      <HintPath>..\WstVisionPlus\bin\x64\Release\gCursor.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>..\WstVisionPlus\bin\x64\Release\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI, Version=3.6.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WstVisionPlus\Dlls\SunnyUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\UNumericUpDown\UNumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UNumericUpDown\UNumericUpDown.designer.cs">
+      <DependentUpon>UNumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UTabControl\CTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UTabControl\Events.cs" />
+    <Compile Include="Controls\UTabControl\NativeMethods.cs" />
+    <Compile Include="Controls\UToolStrip\UToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DebugWind\HDebugWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DebugWind\HDebugWindow.Designer.cs">
+      <DependentUpon>HDebugWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowWind\HShowWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowWind\HShowWindow.Designer.cs">
+      <DependentUpon>HShowWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UToolTreeView\FrmRemarks.cs" />
+    <Compile Include="Controls\UToolTreeView\FrmRemarks.Designer.cs">
+      <DependentUpon>FrmRemarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UTileListView\UListViewItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UTileListView\UListViewItem.Designer.cs">
+      <DependentUpon>UListViewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\USplitLine\USplitLineH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\USplitLine\USplitLineH.Designer.cs">
+      <DependentUpon>USplitLineH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UTileListView\UTileListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UTileListView\UTileListView.Designer.cs">
+      <DependentUpon>UTileListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UMessageListView\UMessageListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UMessageListView\UMessageListView.Designer.cs">
+      <DependentUpon>UMessageListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UTreeTools\UTreeTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UTreeTools\UTreeTools.Designer.cs">
+      <DependentUpon>UTreeTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UProcessBar\UProcressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UProcessBar\UProcressBar.Designer.cs">
+      <DependentUpon>UProcressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UToolTreeView\UToolTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UToolTreeView\UToolTreeView.Designer.cs">
+      <DependentUpon>UToolTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UToolTreeView\ToolTreeNode.cs" />
+    <Compile Include="VTools\Attribute\ToolParamHelper.cs" />
+    <Compile Include="VTools\Attribute\ToolParamTypeAttribute.cs" />
+    <Compile Include="VTools\Attribute\ToolResultAttribute.cs" />
+    <Compile Include="VTools\Base\RoiType.cs" />
+    <Compile Include="VTools\Base\ToolBase.cs" />
+    <Compile Include="VTools\Base\ToolInfo.cs" />
+    <Compile Include="VTools\Base\ToolType.cs" />
+    <Compile Include="VTools\Helper\HObjectHelper.cs" />
+    <Compile Include="VTools\ToolLibs\00 FormBase\FrmInterface.cs" />
+    <Compile Include="VTools\ToolLibs\15 ImageConvertTool\Frm_ImageConvert.cs" />
+    <Compile Include="VTools\ToolLibs\15 ImageConvertTool\Frm_ImageConvert.Designer.cs">
+      <DependentUpon>Frm_ImageConvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\15 ImageConvertTool\ImageConvertTool.cs" />
+    <Compile Include="VTools\Base\ToolOP.cs" />
+    <Compile Include="VTools\ToolLibs\02 ImageBlobTool\Frm_ImageBlob.cs" />
+    <Compile Include="VTools\ToolLibs\02 ImageBlobTool\Frm_ImageBlob.Designer.cs">
+      <DependentUpon>Frm_ImageBlob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\02 ImageBlobTool\ImageBlobTool.cs" />
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.cs" />
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.Designer.cs">
+      <DependentUpon>Frm_EditShapeModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_ShapeModel.cs" />
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_ShapeModel.Designer.cs">
+      <DependentUpon>Frm_ShapeModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\ShapeModelTool.cs" />
+    <Compile Include="VTools\ToolLibs\06 FindLineTool\Frm_FindLine.cs" />
+    <Compile Include="VTools\ToolLibs\06 FindLineTool\Frm_FindLine.Designer.cs">
+      <DependentUpon>Frm_FindLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\06 FindLineTool\ImageFindLineTool.cs" />
+    <Compile Include="VTools\ToolLibs\07 FindCircleTool\Frm_FindCircle.cs" />
+    <Compile Include="VTools\ToolLibs\07 FindCircleTool\Frm_FindCircle.Designer.cs">
+      <DependentUpon>Frm_FindCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\07 FindCircleTool\ImageFindCircleTool.cs" />
+    <Compile Include="VTools\ToolLibs\12 IfTool\IfTool.cs" />
+    <Compile Include="VTools\ToolLibs\13 ElseTool\ElseTool.cs" />
+    <Compile Include="VTools\ToolLibs\01 CameraTool\Frm_CameraAcq.cs" />
+    <Compile Include="VTools\ToolLibs\01 CameraTool\Frm_CameraAcq.Designer.cs">
+      <DependentUpon>Frm_CameraAcq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\01 CameraTool\FrmCamList.cs" />
+    <Compile Include="VTools\ToolLibs\01 CameraTool\FrmCamList.Designer.cs">
+      <DependentUpon>FrmCamList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VTools\ToolLibs\01 CameraTool\CameraAcqTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DebugWind\HDebugWindow.resx">
+      <DependentUpon>HDebugWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UNumericUpDown\UNumericUpDown.resx">
+      <DependentUpon>UNumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UProcessBar\UProcressBar.resx">
+      <DependentUpon>UProcressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UToolTreeView\FrmRemarks.resx">
+      <DependentUpon>FrmRemarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UToolTreeView\UToolTreeView.resx">
+      <DependentUpon>UToolTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UTileListView\UListViewItem.resx">
+      <DependentUpon>UListViewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\USplitLine\USplitLineH.resx">
+      <DependentUpon>USplitLineH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UTileListView\UTileListView.resx">
+      <DependentUpon>UTileListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ShowWind\HShowWindow.resx">
+      <DependentUpon>HShowWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UMessageListView\UMessageListView.resx">
+      <DependentUpon>UMessageListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UTreeTools\UTreeTools.resx">
+      <DependentUpon>UTreeTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\15 ImageConvertTool\Frm_ImageConvert.resx">
+      <DependentUpon>Frm_ImageConvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\02 ImageBlobTool\Frm_ImageBlob.resx">
+      <DependentUpon>Frm_ImageBlob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.resx">
+      <DependentUpon>Frm_EditShapeModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\03 ShapeModelTool\Frm_ShapeModel.resx">
+      <DependentUpon>Frm_ShapeModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\06 FindLineTool\Frm_FindLine.resx">
+      <DependentUpon>Frm_FindLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\07 FindCircleTool\Frm_FindCircle.resx">
+      <DependentUpon>Frm_FindCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\01 CameraTool\Frm_CameraAcq.resx">
+      <DependentUpon>Frm_CameraAcq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VTools\ToolLibs\01 CameraTool\FrmCamList.resx">
+      <DependentUpon>FrmCamList.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueSub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grayAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graySub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VTools\ToolLibs\04 NccModelTool\" />
+    <Folder Include="VTools\ToolLibs\05 NinePointTool\" />
+    <Folder Include="VTools\ToolLibs\08 DistanceLLTool\" />
+    <Folder Include="VTools\ToolLibs\09 DistancePLTool\" />
+    <Folder Include="VTools\ToolLibs\10 DistancePPTool\" />
+    <Folder Include="VTools\ToolLibs\11 AngleLLTool\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WstCommonTools\WstCommonTools.csproj">
+      <Project>{95c06057-e80d-41aa-b8dc-7b4e37bd3759}</Project>
+      <Name>WstCommonTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\WstVisionPlus\bin\x64\Release\SunnyUI.Common.dll" />
+    <Analyzer Include="..\WstVisionPlus\bin\x64\Release\SunnyUI.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

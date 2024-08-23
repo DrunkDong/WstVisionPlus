@@ -1,0 +1,4 @@
+C:\Users\user\Desktop\WeiVision-Probe\CommonTools\obj\Debug\CommonTools.csprojAssemblyReference.cache
+C:\Users\user\Desktop\WeiVision-Probe\CommonTools\obj\Debug\Interop.ADOX.dll
+C:\Users\user\Desktop\WeiVision-Probe\CommonTools\obj\Debug\CommonTools.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\WeiVision-Probe\CommonTools\obj\Debug\CommonTools.csproj.CoreCompileInputs.cache

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WstVisionPlus", "WstVisionPlus\WstVisionPlus.csproj", "{BDE0E351-289D-47BE-A57F-CABE1E6EA948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WstControls", "WstControls\WstControls.csproj", "{416E10D9-ED71-4FF8-A19E-6C369025AB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WstCommonTools", "WstCommonTools\WstCommonTools.csproj", "{95C06057-E80D-41AA-B8DC-7B4E37BD3759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE0E351-289D-47BE-A57F-CABE1E6EA948}.Release|x64.ActiveCfg = Release|x64
+		{BDE0E351-289D-47BE-A57F-CABE1E6EA948}.Release|x64.Build.0 = Release|x64
+		{416E10D9-ED71-4FF8-A19E-6C369025AB3C}.Release|x64.ActiveCfg = Release|x64
+		{416E10D9-ED71-4FF8-A19E-6C369025AB3C}.Release|x64.Build.0 = Release|x64
+		{95C06057-E80D-41AA-B8DC-7B4E37BD3759}.Release|x64.ActiveCfg = Release|x64
+		{95C06057-E80D-41AA-B8DC-7B4E37BD3759}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A863876-EF71-41AA-BFC6-A1E7C0FB503B}
+	EndGlobalSection
+EndGlobal

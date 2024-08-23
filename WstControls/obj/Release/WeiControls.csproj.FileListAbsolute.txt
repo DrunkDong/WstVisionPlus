@@ -1,0 +1,13 @@
+C:\Users\13286\Desktop\WeiVision\WeiControls\bin\Release\WeiControls.dll
+C:\Users\13286\Desktop\WeiVision\WeiControls\bin\Release\WeiControls.pdb
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.Properties.Resources.resources
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.UListViewItem.resources
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.USplitLineH.resources
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.UListView.resources
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.UTilePanel.resources
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.csproj.GenerateResource.cache
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.csproj.CoreCompileInputs.cache
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.dll
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.pdb
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.csproj.CopyComplete
+C:\Users\13286\Desktop\WeiVision\WeiControls\obj\Release\WeiControls.HShowWindow.resources

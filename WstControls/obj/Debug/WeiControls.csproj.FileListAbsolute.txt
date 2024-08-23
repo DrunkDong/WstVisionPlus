@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.csprojAssemblyReference.cache
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.HDebugWindow.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UNumericUpDownColor.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UNumericUpDown.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UProcressBar.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.Properties.Resources.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UListViewItem.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.USplitLineH.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UTileListView.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.HShowWindow.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UMessageListView.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.UTreeTools.resources
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.csproj.GenerateResource.cache
+C:\Users\user\Desktop\WeiVision-Probe\WeiControls\obj\Debug\WeiControls.csproj.CoreCompileInputs.cache
