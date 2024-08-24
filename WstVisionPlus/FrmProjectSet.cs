@@ -161,7 +161,6 @@ namespace WstVisionPlus
 
             //读取当前配置
             string path = AppDomain.CurrentDomain.BaseDirectory + "Project\\" + mMachine.CurrProjectInfo.mProjectName + "\\" + 0 + ".dat";
-            List<ToolBase> toolsList = new List<ToolBase>();
             ReadToolList(path);
         }
 
@@ -250,14 +249,9 @@ namespace WstVisionPlus
                                 item.RectPressColor = Color.FromArgb(88, 152, 32);
                             }
                         }
-                        ////变更相机对象
-                        //mCamera = mMachine.CamList[index];
-                        //if (mCamera != null)
-                        //{
-                        //    mCamera.SetCameraMode(TriggerMode.Mode_SoftTrigger);
-                        //    mCamera.SetTriggerSource(TriggerSource.Software);
-                        //    mCamera.StartGrab();
-                        //}
+                        string path = AppDomain.CurrentDomain.BaseDirectory + "Project\\" + mMachine.CurrProjectInfo.mProjectName + "\\" + index + ".dat";
+                        ReadToolList(path);
+
                         mCamIndex = index;
                         UIFormServiceHelper.HideProcessForm(this);
                     }
@@ -967,6 +961,11 @@ namespace WstVisionPlus
         private void ReadToolList(string path) 
         {
             List<ToolBase> toolsList = new List<ToolBase>();
+            mToolTreeView.Nodes.Clear();
+            mToolTreeView.ToolList.Clear();
+            mToolTreeView.ToolInfoList.Clear();
+            if (!File.Exists(path))
+                return;
             ToolOP.ReadToolList(path, out toolsList);
             if (toolsList.Count > 0)
             {
@@ -978,6 +977,7 @@ namespace WstVisionPlus
                 {
                     InitTools(item);
                 }
+                mSelectedTool = mToolTreeView.ToolList[0];
             }
         }
 

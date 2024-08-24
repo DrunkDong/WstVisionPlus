@@ -489,10 +489,10 @@ namespace WstControls
             {
                 int j = 1;
                 GetNewToolName(name, ToolList, ref j);
-                return name + j.ToString();
+                return name + " " + j.ToString();
             }
             else
-                return name + 1;
+                return name + " " + 1;
         }
 
         private void GetNewToolName(string name, List<ToolBase> tools, ref int nameCount)
