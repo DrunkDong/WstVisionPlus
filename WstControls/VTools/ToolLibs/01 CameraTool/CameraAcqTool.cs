@@ -27,21 +27,16 @@ namespace WstControls
             mFolderImageQueue = new Queue<HObject>();
         }
 
-
+        bool mReceiveImage;
         TriggerSource mCamTriggerSource;
         TriggerMode mCameraTriggerMode;
         CameraBase mCurrCamera;
-
+        Queue<HObject> mFolderImageQueue;
 
         [NonSerialized]
         AutoResetEvent mReceiveEvent;
         [NonSerialized]
         HObject mCurrReceiveImage;
-        [NonSerialized]
-        bool mReceiveImage;
-        [NonSerialized]
-        Queue<HObject> mFolderImageQueue;
-        
 
         public CameraBase CurrCamera
         {
@@ -72,6 +67,11 @@ namespace WstControls
         {
             get => mFolderImageQueue;
             set => mFolderImageQueue = value;
+        }
+        public AutoResetEvent ReceiveEvent
+        {
+            get => mReceiveEvent;
+            set => mReceiveEvent = value;
         }
 
         public void CameraReceiveHandler(HObject obj)
@@ -123,10 +123,14 @@ namespace WstControls
                             {
                                 DebugWind.DispImage(mCurrReceiveImage);
                             }
+                            mReceiveImage = false;
                             return OperateStatus.OK;
                         }
                         else
+                        {
+                            mReceiveImage = false;
                             return OperateStatus.Error;
+                        }
                     }
                     else
                         Thread.Sleep(1);
@@ -135,6 +139,7 @@ namespace WstControls
             }
             catch (Exception ex)
             {
+                mReceiveImage = false;
                 LogHelper.WriteExceptionLog("CameraAcqTool is Error\r" + ex.Message);
                 return OperateStatus.Error;
             }
@@ -168,6 +173,12 @@ namespace WstControls
 
         public override void ToolForceStop()
         {
+            mReceiveImage = false;
+        }
+
+        public override void InitTool()
+        {
+            mReceiveEvent = new AutoResetEvent(false);
             mReceiveImage = false;
         }
     }

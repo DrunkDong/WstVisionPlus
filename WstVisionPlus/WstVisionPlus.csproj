@@ -112,7 +112,9 @@
     <Compile Include="Forms\FrmLoading.Designer.cs">
       <DependentUpon>FrmLoading.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmProjectEdit.cs" />
+    <Compile Include="Forms\FrmProjectEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmProjectEdit.Designer.cs">
       <DependentUpon>FrmProjectEdit.cs</DependentUpon>
     </Compile>
@@ -122,11 +124,15 @@
     <Compile Include="Forms\FrmStartLoad.Designer.cs">
       <DependentUpon>FrmStartLoad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmProjectAdd.cs" />
+    <Compile Include="Forms\FrmProjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmProjectAdd.Designer.cs">
       <DependentUpon>FrmProjectAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmSelectProject.cs" />
+    <Compile Include="Forms\FrmSelectProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmSelectProject.Designer.cs">
       <DependentUpon>FrmSelectProject.cs</DependentUpon>
     </Compile>
@@ -136,43 +142,63 @@
       <DependentUpon>MainForm.en-US.resx</DependentUpon>
     </Compile>
     <Compile Include="Code\Machine.cs" />
-    <Compile Include="Forms\FrmCameraSet.cs" />
+    <Compile Include="Forms\FrmCameraSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmCameraSet.Designer.cs">
       <DependentUpon>FrmCameraSet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmCamListView.cs" />
+    <Compile Include="Forms\FrmCamListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmCamListView.Designer.cs">
       <DependentUpon>FrmCamListView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmProjectManager.cs" />
+    <Compile Include="Forms\FrmProjectManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmProjectManager.Designer.cs">
       <DependentUpon>FrmProjectManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmLogin.cs" />
+    <Compile Include="Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmSystemSetting.cs" />
+    <Compile Include="Forms\FrmSystemSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmSystemSetting.Designer.cs">
       <DependentUpon>FrmSystemSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmUserAdd.cs" />
+    <Compile Include="Forms\FrmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmUserAdd.Designer.cs">
       <DependentUpon>FrmUserAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmUsers.cs" />
+    <Compile Include="Forms\FrmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmUsers.Designer.cs">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmCommunicate.cs" />
+    <Compile Include="Forms\FrmCommunicate.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmCommunicate.Designer.cs">
       <DependentUpon>FrmCommunicate.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProjectSet.cs" />
+    <Compile Include="FrmProjectSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmProjectSet.Designer.cs">
       <DependentUpon>FrmProjectSet.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>

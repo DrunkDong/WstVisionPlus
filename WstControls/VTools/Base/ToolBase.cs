@@ -77,6 +77,8 @@ namespace WstControls
         /// </summary>
         public virtual void ToolForceStop() { }
 
+        public virtual void InitTool() { }
+
         public ToolBase()
         {
             mChildToolList = new List<ToolBase>();

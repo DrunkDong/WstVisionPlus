@@ -1,0 +1,4 @@
+[2024-08-24 10:38:10,106]  12 -- FATAL -- Image matching SearchRegion is null!
+[2024-08-24 10:38:10,681]  12 -- FATAL -- Image matching SearchRegion is null!
+[2024-08-24 10:38:25,247]  1 -- FATAL -- Image matching SearchRegion is null!
+[2024-08-24 10:38:25,377]  1 -- FATAL -- Image matching SearchRegion is null!

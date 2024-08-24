@@ -89,6 +89,12 @@ namespace WstControls
                     case ToolType.Camera:
                         formatter.Serialize(serializationStream, (CameraAcqTool)tool);
                         break;
+                    case ToolType.If:
+                        formatter.Serialize(serializationStream, (IfTool)tool);
+                        break;
+                    case ToolType.Else:
+                        formatter.Serialize(serializationStream, (ElseTool)tool);
+                        break;
                     default:
                         break;
                 }
@@ -144,6 +150,12 @@ namespace WstControls
                         break;
                     case ToolType.Camera:
                         tool = (CameraAcqTool)formatter.Deserialize(serializationStream);
+                        break;
+                    case ToolType.If:
+                        tool = (IfTool)formatter.Deserialize(serializationStream);
+                        break;
+                    case ToolType.Else:
+                        tool = (ElseTool)formatter.Deserialize(serializationStream);
                         break;
                     default:
                         break;

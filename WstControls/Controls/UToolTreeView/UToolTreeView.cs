@@ -181,7 +181,6 @@ namespace WstControls
             }
         }
 
-
         private void OnMouseUp(object sender, MouseEventArgs e)
         {
             mMouseDown = false;
@@ -599,22 +598,49 @@ namespace WstControls
             GetToolInfoList();
         }
 
-        private void GetToolInfoList() 
+        private void GetToolInfoList()
         {
             mToolInfoList.Clear();
             GetToolInfo(Nodes);
-
         }
-        private void GetToolInfo(TreeNodeCollection toolNode) 
+
+        private void GetToolInfo(TreeNodeCollection toolNode)
         {
             for (int i = 0; i < toolNode.Count; i++)
             {
                 ToolTreeNode node = (ToolTreeNode)Nodes[i];
                 if (node != null)
                     mToolInfoList.Add(node.ToolInfo);
-                //if (node.Nodes.Count > 0) 
-                //    GetToolInfo(node.Nodes);
+                if (node.Nodes.Count > 0)
+                    GetToolInfo(node.Nodes);
             }
         }
+
+        private void LoadToolToTrees(List<ToolBase> lit, TreeNodeCollection Nodes)
+        {
+            if (lit.Count > 0)
+            {
+                foreach (ToolBase item in lit)
+                {
+                    ToolTreeNode toolTree = new ToolTreeNode(item);
+                    Nodes.Add(toolTree);
+                    if (item.ChildToolList.Count > 0) 
+                    {
+                        TreeNodeCollection nodes = toolTree.Nodes;
+                        LoadToolToTrees(item.ChildToolList.ToList(), nodes);
+                    }
+                }
+            }
+        }
+        public void LoadTools(List<ToolBase> lit) 
+        {
+            LoadToolToTrees(lit, this.Nodes);
+            UpdataToolStepIndex();
+            GetToolInfoList();
+            Invalidate();//刷新UI
+            mToolList = lit;
+            toolView.ExpandAll();
+        }
+
     }
 }

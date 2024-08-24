@@ -13,6 +13,7 @@ using HalconDotNet;
 using Sunny.UI;
 using System.IO;
 using System.Threading;
+using System.Collections;
 
 namespace WstVisionPlus
 {
@@ -144,7 +145,10 @@ namespace WstVisionPlus
         private void ToolStripButton_Save_Click(object sender, EventArgs e)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\Project\\" + mMachine.CurrProjectInfo.mProjectName + "\\" + 0 + ".dat";
-            this.Invoke(new Action(() => { ToolOP.SaveToolList(path, ToolTreeView.ToolList); }));
+            if (ToolOP.SaveToolList(path, ToolTreeView.ToolList) == OperateStatus.OK)
+                MessageBox.Show("save suceess", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("save failed", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void FrmProjectSet_Load(object sender, EventArgs e)
@@ -154,6 +158,11 @@ namespace WstVisionPlus
             mToolTreeView.NodeSelected += ToolTreeView_NodeSelected;
             mToolTreeView.NodeDoubleClick += ToolTreeView_NodeDoubleClick;
             mToolTreeView.NodeDeleClick += ToolTreeView_NodeDeleClick;
+
+            //读取当前配置
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Project\\" + mMachine.CurrProjectInfo.mProjectName + "\\" + 0 + ".dat";
+            List<ToolBase> toolsList = new List<ToolBase>();
+            ReadToolList(path);
         }
 
         private void ToolTreeView_NodeDeleClick(object sender, EventArgs e)
@@ -948,9 +957,48 @@ namespace WstVisionPlus
             uiTitlePanel_Tool.Enabled = false;
             ControlBox = false;
         }
+
         private void toolStripButton_RunOnce_Click(object sender, EventArgs e)
         {
             ClickRunOnce();
+        }
+
+        //读取工具列表
+        private void ReadToolList(string path) 
+        {
+            List<ToolBase> toolsList = new List<ToolBase>();
+            ToolOP.ReadToolList(path, out toolsList);
+            if (toolsList.Count > 0)
+            {
+                //加载tools
+                ToolTreeView.LoadTools(toolsList);
+
+                //初始化各类tools
+                foreach (var item in toolsList)
+                {
+                    InitTools(item);
+                }
+            }
+        }
+
+        private void InitTools(ToolBase iBase) 
+        {
+            //先初始化工具
+            iBase.InitTool();
+            if (iBase.Type == ToolType.Camera) 
+            {
+                CameraAcqTool itool = (CameraAcqTool)iBase;
+                if (itool.CurrCamera.SerialNum != null) 
+                {
+                    CameraBase camera = Machine.GetInstance().CamList.Where(i => i.SerialNum == itool.CurrCamera.SerialNum).FirstOrDefault();
+                    itool.CurrCamera = camera;
+                }
+            }
+            if (iBase.ChildToolList.Count > 0) 
+            {
+                foreach (var item in iBase.ChildToolList)
+                    InitTools(item);
+            }
         }
     }
 }

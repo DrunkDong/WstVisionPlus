@@ -58,6 +58,7 @@ namespace WstControls
 
         private void Frm_Camera_Load(object sender, EventArgs e)
         {
+            mIsInit = false;
             this.Text = tool.ShowName;
             this.TitleFont = new Font("微软雅黑", 16F);
             this.TextAlignment = StringAlignment.Center;
@@ -95,7 +96,8 @@ namespace WstControls
         }
         private void InitParam()
         {
-
+            if (tool.CurrCamera != null)
+                textBox_SN.Text = tool.CurrCamera.SerialNum;
         }
 
         private void InitAllComboboxNode()

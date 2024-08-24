@@ -189,6 +189,13 @@ namespace WstControls
                 child_window.DebugWindow.HalconWindow.DispText("搜索区域未建立！", "image", 0, 0, "red", (HTuple)"box", (HTuple)"false");
                 return;
             }
+            if (tool.CreateRegion.Area <= 0) 
+            {
+                child_window.DebugWindow.HalconWindow.SetFont("Consolas-18");
+                child_window.DebugWindow.HalconWindow.DispText("模板创建区域未建立！", "image", 0, 0, "red", (HTuple)"box", (HTuple)"false");
+                return;
+
+            }
             HOperatorSet.CountSeconds(out HTuple s1);
             HImage source = new HImage(child_window.CurrImage);
             if (tool.SearchShapeModel == null)

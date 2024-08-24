@@ -97,7 +97,9 @@
     <Compile Include="Controls\ShowWind\HShowWindow.Designer.cs">
       <DependentUpon>HShowWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\UToolTreeView\FrmRemarks.cs" />
+    <Compile Include="Controls\UToolTreeView\FrmRemarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Controls\UToolTreeView\FrmRemarks.Designer.cs">
       <DependentUpon>FrmRemarks.cs</DependentUpon>
     </Compile>
@@ -159,43 +161,59 @@
     <Compile Include="VTools\Base\ToolType.cs" />
     <Compile Include="VTools\Helper\HObjectHelper.cs" />
     <Compile Include="VTools\ToolLibs\00 FormBase\FrmInterface.cs" />
-    <Compile Include="VTools\ToolLibs\15 ImageConvertTool\Frm_ImageConvert.cs" />
+    <Compile Include="VTools\ToolLibs\15 ImageConvertTool\Frm_ImageConvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\15 ImageConvertTool\Frm_ImageConvert.Designer.cs">
       <DependentUpon>Frm_ImageConvert.cs</DependentUpon>
     </Compile>
     <Compile Include="VTools\ToolLibs\15 ImageConvertTool\ImageConvertTool.cs" />
     <Compile Include="VTools\Base\ToolOP.cs" />
-    <Compile Include="VTools\ToolLibs\02 ImageBlobTool\Frm_ImageBlob.cs" />
+    <Compile Include="VTools\ToolLibs\02 ImageBlobTool\Frm_ImageBlob.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\02 ImageBlobTool\Frm_ImageBlob.Designer.cs">
       <DependentUpon>Frm_ImageBlob.cs</DependentUpon>
     </Compile>
     <Compile Include="VTools\ToolLibs\02 ImageBlobTool\ImageBlobTool.cs" />
-    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.cs" />
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.Designer.cs">
       <DependentUpon>Frm_EditShapeModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_ShapeModel.cs" />
+    <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_ShapeModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\03 ShapeModelTool\Frm_ShapeModel.Designer.cs">
       <DependentUpon>Frm_ShapeModel.cs</DependentUpon>
     </Compile>
     <Compile Include="VTools\ToolLibs\03 ShapeModelTool\ShapeModelTool.cs" />
-    <Compile Include="VTools\ToolLibs\06 FindLineTool\Frm_FindLine.cs" />
+    <Compile Include="VTools\ToolLibs\06 FindLineTool\Frm_FindLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\06 FindLineTool\Frm_FindLine.Designer.cs">
       <DependentUpon>Frm_FindLine.cs</DependentUpon>
     </Compile>
     <Compile Include="VTools\ToolLibs\06 FindLineTool\ImageFindLineTool.cs" />
-    <Compile Include="VTools\ToolLibs\07 FindCircleTool\Frm_FindCircle.cs" />
+    <Compile Include="VTools\ToolLibs\07 FindCircleTool\Frm_FindCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\07 FindCircleTool\Frm_FindCircle.Designer.cs">
       <DependentUpon>Frm_FindCircle.cs</DependentUpon>
     </Compile>
     <Compile Include="VTools\ToolLibs\07 FindCircleTool\ImageFindCircleTool.cs" />
     <Compile Include="VTools\ToolLibs\12 IfTool\IfTool.cs" />
     <Compile Include="VTools\ToolLibs\13 ElseTool\ElseTool.cs" />
-    <Compile Include="VTools\ToolLibs\01 CameraTool\Frm_CameraAcq.cs" />
+    <Compile Include="VTools\ToolLibs\01 CameraTool\Frm_CameraAcq.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\01 CameraTool\Frm_CameraAcq.Designer.cs">
       <DependentUpon>Frm_CameraAcq.cs</DependentUpon>
     </Compile>
-    <Compile Include="VTools\ToolLibs\01 CameraTool\FrmCamList.cs" />
+    <Compile Include="VTools\ToolLibs\01 CameraTool\FrmCamList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="VTools\ToolLibs\01 CameraTool\FrmCamList.Designer.cs">
       <DependentUpon>FrmCamList.cs</DependentUpon>
     </Compile>

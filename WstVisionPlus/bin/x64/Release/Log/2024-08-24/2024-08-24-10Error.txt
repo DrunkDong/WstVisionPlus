@@ -1,0 +1,16 @@
+[2024-08-24 10:10:07,401]  7 -- ERROR -- 相机 [Vir00125402] 取流超时，43ms
+[2024-08-24 10:10:07,400]  4 -- ERROR -- 相机 [Vir00113031] 取流超时，48ms
+[2024-08-24 10:38:58,703]  1 -- ERROR -- -----------------------begin--------------------------
+[2024-08-24 10:38:58,703]  1 -- ERROR -- Application_ThreadException2024-08-24 10:38:58
+[2024-08-24 10:38:58,730]  1 -- ERROR -- HalconDotNet.HOperatorException: HALCON error #3111: At least one input object has an empty region in operator create_shape_model
+   在 HalconDotNet.HOperatorException.throwOperator(Int32 err, Int32 procIndex)
+   在 HalconDotNet.HalconAPI.PostCall(IntPtr proc, Int32 procResult)
+   在 HalconDotNet.HShapeModel.CreateShapeModel(HImage template, HTuple numLevels, Double angleStart, Double angleExtent, HTuple angleStep, HTuple optimization, String metric, HTuple contrast, HTuple minContrast)
+   在 WstControls.Frm_EditShapeModel.AutoCreateShapeModel() 位置 D:\002------GitWorkSpace\WstVisionPlus\WstControls\VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.cs:行号 196
+   在 WstControls.Frm_EditShapeModel.UiButton_AutoCreate_Click(Object sender, EventArgs e) 位置 D:\002------GitWorkSpace\WstVisionPlus\WstControls\VTools\ToolLibs\03 ShapeModelTool\Frm_EditShapeModel.cs:行号 143
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 Sunny.UI.UIControl.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+[2024-08-24 10:38:58,741]  1 -- ERROR -- -----------------------end----------------------------

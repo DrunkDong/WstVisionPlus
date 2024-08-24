@@ -1,12 +1,104 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\002------GitWorkSpace\\WstVisionPlus\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDE0E351-289D-47BE-A57F-CABE1E6EA948}|WstVisionPlus\\WstVisionPlus.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstvisionplus\\frmprojectset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDE0E351-289D-47BE-A57F-CABE1E6EA948}|WstVisionPlus\\WstVisionPlus.csproj|solutionrelative:wstvisionplus\\frmprojectset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDE0E351-289D-47BE-A57F-CABE1E6EA948}|WstVisionPlus\\WstVisionPlus.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstvisionplus\\frmprojectset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BDE0E351-289D-47BE-A57F-CABE1E6EA948}|WstVisionPlus\\WstVisionPlus.csproj|solutionrelative:wstvisionplus\\frmprojectset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstcontrols\\vtools\\base\\toolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\vtools\\base\\toolop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstcontrols\\vtools\\toollibs\\01 cameratool\\cameraacqtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\vtools\\toollibs\\01 cameratool\\cameraacqtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstcontrols\\vtools\\base\\toolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\vtools\\base\\toolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToolOP.cs",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\Base\\ToolOP.cs",
+              "RelativeDocumentMoniker": "WstControls\\VTools\\Base\\ToolOP.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\Base\\ToolOP.cs",
+              "RelativeToolTip": "WstControls\\VTools\\Base\\ToolOP.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAD4v6wAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T06:10:18.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CameraAcqTool.cs",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\ToolLibs\\01 CameraTool\\CameraAcqTool.cs",
+              "RelativeDocumentMoniker": "WstControls\\VTools\\ToolLibs\\01 CameraTool\\CameraAcqTool.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\ToolLibs\\01 CameraTool\\CameraAcqTool.cs",
+              "RelativeToolTip": "WstControls\\VTools\\ToolLibs\\01 CameraTool\\CameraAcqTool.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAQwLUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T03:59:38.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ToolBase.cs",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\Base\\ToolBase.cs",
+              "RelativeDocumentMoniker": "WstControls\\VTools\\Base\\ToolBase.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\Base\\ToolBase.cs",
+              "RelativeToolTip": "WstControls\\VTools\\Base\\ToolBase.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAmwE8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T03:59:09.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmProjectSet.cs",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstVisionPlus\\FrmProjectSet.cs",
+              "RelativeDocumentMoniker": "WstVisionPlus\\FrmProjectSet.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstVisionPlus\\FrmProjectSet.cs",
+              "RelativeToolTip": "WstVisionPlus\\FrmProjectSet.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAiwF4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T03:55:29.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmProjectSet.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstVisionPlus\\FrmProjectSet.cs",
+              "RelativeDocumentMoniker": "WstVisionPlus\\FrmProjectSet.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstVisionPlus\\FrmProjectSet.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "WstVisionPlus\\FrmProjectSet.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T03:55:28.692Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
