@@ -978,6 +978,8 @@ namespace WstVisionPlus
                     InitTools(item);
                 }
                 mSelectedTool = mToolTreeView.ToolList[0];
+                mToolTreeView.SelectNode = ((ToolTreeNode)mToolTreeView.Nodes[0]);
+                mToolTreeView.Invalidate();
             }
         }
 

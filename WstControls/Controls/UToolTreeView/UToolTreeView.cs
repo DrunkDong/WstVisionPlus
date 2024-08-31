@@ -116,8 +116,12 @@ namespace WstControls
                 else
                     return null;
                 
-            } 
-            set => mSelectNode = value; 
+            }
+            set 
+            { 
+                mSelectNode = value;
+                toolView.SelectedNode = mSelectNode;
+            }
         }
 
         public bool IsToolRunning
@@ -130,7 +134,6 @@ namespace WstControls
             get => mCurrRunStepNode;
             set => mCurrRunStepNode = value;
         }
-
         private void DrawNode(object sender, DrawTreeNodeEventArgs e)
         {
             ToolTreeNode note = (ToolTreeNode)e.Node;
