@@ -1,0 +1,16 @@
+[2024-09-05 15:57:42,281]  1 -- ERROR -- -----------------------begin--------------------------
+[2024-09-05 15:57:42,289]  1 -- ERROR -- Application_ThreadException2024-09-05 03:57:42
+[2024-09-05 15:57:42,302]  1 -- ERROR -- System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WstVisionPlus.FrmProjectSet.InitTools(ToolBase iBase) 位置 D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\FrmProjectSet.cs:行号 988
+   在 WstVisionPlus.FrmProjectSet.ReadToolList(String path) 位置 D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\FrmProjectSet.cs:行号 973
+   在 WstVisionPlus.FrmProjectSet.FrmProjectSet_Load(Object sender, EventArgs e) 位置 D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\FrmProjectSet.cs:行号 164
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 Sunny.UI.UIForm.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+[2024-09-05 15:57:42,302]  1 -- ERROR -- -----------------------end----------------------------

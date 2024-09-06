@@ -325,6 +325,9 @@ namespace WstControls
                 ToolBase tool1 = AddNewTool("If");
                 ToolBase tool2 = AddNewTool("Else");
                 tool2.ToolID = tool1.ToolID + 1;
+                //互相绑定
+                tool1.BingdingTool = tool2;
+                tool2.BingdingTool = tool1;
                 //生成节点
                 ToolTreeNode node1 = new ToolTreeNode(tool1);
                 ToolTreeNode node2 = new ToolTreeNode(tool2);
@@ -603,15 +606,23 @@ namespace WstControls
 
         private void GetToolInfoList()
         {
-            mToolInfoList.Clear();
-            GetToolInfo(Nodes);
+            try
+            {
+                mToolInfoList.Clear();
+                GetToolInfo(Nodes);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void GetToolInfo(TreeNodeCollection toolNode)
         {
             for (int i = 0; i < toolNode.Count; i++)
             {
-                ToolTreeNode node = (ToolTreeNode)Nodes[i];
+                ToolTreeNode node = (ToolTreeNode)toolNode[i];
                 if (node != null)
                     mToolInfoList.Add(node.ToolInfo);
                 if (node.Nodes.Count > 0)
@@ -635,6 +646,7 @@ namespace WstControls
                 }
             }
         }
+
         public void LoadTools(List<ToolBase> lit) 
         {
             LoadToolToTrees(lit, this.Nodes);

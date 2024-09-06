@@ -1,0 +1,15 @@
+[2024-09-05 16:21:35,688]  1 -- ERROR -- -----------------------begin--------------------------
+[2024-09-05 16:21:35,699]  1 -- ERROR -- Application_ThreadException2024-09-05 04:21:35
+[2024-09-05 16:21:35,719]  1 -- ERROR -- System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WstControls.Frm_CameraAcq.<>c__DisplayClass36_0.<uiSymbolButton_Select_Click>b__0(CameraBase i)
+   在 System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 WstControls.Frm_CameraAcq.uiSymbolButton_Select_Click(Object sender, EventArgs e)
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 Sunny.UI.UIControl.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+[2024-09-05 16:21:35,731]  1 -- ERROR -- -----------------------end----------------------------
+[2024-09-05 16:31:22,530]  4 -- ERROR -- 相机 [Vir00113031] 取流超时，47ms
+[2024-09-05 16:31:22,533]  7 -- ERROR -- 相机 [Vir00125402] 取流超时，42ms

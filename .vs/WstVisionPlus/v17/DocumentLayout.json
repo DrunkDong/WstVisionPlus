@@ -9,18 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BDE0E351-289D-47BE-A57F-CABE1E6EA948}|WstVisionPlus\\WstVisionPlus.csproj|D:\\002------GitWorkSpace\\WstVisionPlus\\wstvisionplus\\frmprojectset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BDE0E351-289D-47BE-A57F-CABE1E6EA948}|WstVisionPlus\\WstVisionPlus.csproj|solutionrelative:wstvisionplus\\frmprojectset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|D:\\002------GitWorkSpace\\WstVisionPlus\\wstcontrols\\controls\\utooltreeview\\tooltreenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\controls\\utooltreeview\\tooltreenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|D:\\002------GitWorkSpace\\WstVisionPlus\\wstcontrols\\controls\\utooltreeview\\utooltreeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\controls\\utooltreeview\\utooltreeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|D:\\002------GitWorkSpace\\WstVisionPlus\\wstcontrols\\controls\\utooltreeview\\utooltreeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\controls\\utooltreeview\\utooltreeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,32 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UToolTreeView.cs",
-              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
-              "RelativeDocumentMoniker": "WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
-              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
-              "RelativeToolTip": "WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAAAIMAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T02:24:46.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ToolTreeNode.cs",
-              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\ToolTreeNode.cs",
-              "RelativeDocumentMoniker": "WstControls\\Controls\\UToolTreeView\\ToolTreeNode.cs",
-              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\ToolTreeNode.cs",
-              "RelativeToolTip": "WstControls\\Controls\\UToolTreeView\\ToolTreeNode.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwDwAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T02:12:56.788Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -64,9 +28,9 @@
               "RelativeDocumentMoniker": "WstVisionPlus\\FrmProjectSet.cs",
               "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstVisionPlus\\FrmProjectSet.cs",
               "RelativeToolTip": "WstVisionPlus\\FrmProjectSet.cs",
-              "ViewState": "AQIAAKoBAAAAAAAAAAAwwL8DAAAQAAAA",
+              "ViewState": "AQIAAAwEAAAAAAAAAAAcwB8EAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T02:11:10.268Z",
+              "WhenOpened": "2024-09-05T08:23:29.509Z",
               "EditorCaption": ""
             },
             {
@@ -78,18 +42,7 @@
               "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstVisionPlus\\FrmProjectSet.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "WstVisionPlus\\FrmProjectSet.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T02:11:09.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UToolTreeView.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
-              "RelativeDocumentMoniker": "WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
-              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T02:10:59.995Z"
+              "WhenOpened": "2024-09-05T08:23:28.249Z"
             }
           ]
         }

@@ -18,7 +18,8 @@ namespace WstControls
         [NonSerialized]
         HDebugWindow mToolWind;//显示窗口
 
-        List<ToolBase> mChildToolList;//子工具列表       
+        List<ToolBase> mChildToolList;//子工具列表
+        ToolBase mBingdingTool; //关联与绑定工具
         double mCostTime;//执行耗时
 
         /// <summary>
@@ -51,6 +52,11 @@ namespace WstControls
             get => mChildToolList;
             set => mChildToolList = value;
         }
+        public ToolBase BingdingTool
+        {
+            get => mBingdingTool;
+            set => mBingdingTool = value;
+        }
 
         /// <summary>
         /// 工具执行方法
@@ -59,7 +65,7 @@ namespace WstControls
         /// <param name="toolList">工具链表</param>
         /// <param name="mIsShowResult">是否显示工具运行结果</param>
         /// <returns></returns>
-        public virtual OperateStatus ToolRun(List<ToolBase> toolList, bool mIsShowResult) { return OperateStatus.OK; }
+        public virtual OperateStatus ToolRun(List<ToolBase> toolList, bool mIsShowResult) { System.Threading.Thread.Sleep(1000); return OperateStatus.OK; }
 
         /// <summary>
         /// 释放上一次运算结果

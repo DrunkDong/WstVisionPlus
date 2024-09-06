@@ -11,6 +11,8 @@ namespace WstCommonTools
         Error = -1,
         OK = 0,
         Virtual = 1,
-        Break= 2
+        Break = 2,
+        RunIf = 3,
+        RunElse = 4
     }
 }

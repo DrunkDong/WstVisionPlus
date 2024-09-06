@@ -550,6 +550,7 @@ namespace WstControls
 
         public override OperateStatus ToolRun(List<ToolBase> toolList, bool mIsShowResult)
         {
+            System.Threading.Thread.Sleep(1000);
             try
             {
                 CostTime = 0;

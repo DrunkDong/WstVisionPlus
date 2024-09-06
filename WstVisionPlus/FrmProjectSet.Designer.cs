@@ -42,6 +42,17 @@
             this.uiSymbolButton_Num2 = new Sunny.UI.UISymbolButton();
             this.uiSymbolButton_Num1 = new Sunny.UI.UISymbolButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.statusStrip_Status = new System.Windows.Forms.StatusStrip();
+            this.panel_Camera = new System.Windows.Forms.Panel();
+            this.panel_ToolInfo = new System.Windows.Forms.Panel();
+            this.panel_ToolTree = new System.Windows.Forms.Panel();
+            this.contextMenuStrip_ListView = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.上移ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.下移ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uiTitlePanel_Tool = new Sunny.UI.UITitlePanel();
+            this.panel_Tool = new System.Windows.Forms.Panel();
             this.toolStrip_MainButton = new WstControls.UToolStrip();
             this.toolStripButton_OpenFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton_LoadFolder = new System.Windows.Forms.ToolStripButton();
@@ -57,21 +68,10 @@
             this.toolStripButton_Contiue = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton_Save = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip_Status = new System.Windows.Forms.StatusStrip();
-            this.panel_Camera = new System.Windows.Forms.Panel();
-            this.panel_ToolInfo = new System.Windows.Forms.Panel();
-            this.panel_ToolTree = new System.Windows.Forms.Panel();
-            this.contextMenuStrip_ListView = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.上移ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.下移ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uiTitlePanel_Tool = new Sunny.UI.UITitlePanel();
-            this.panel_Tool = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.toolStrip_MainButton.SuspendLayout();
             this.contextMenuStrip_ListView.SuspendLayout();
             this.uiTitlePanel_Tool.SuspendLayout();
+            this.toolStrip_MainButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -338,189 +338,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
-            // toolStrip_MainButton
-            // 
-            this.toolStrip_MainButton.AutoSize = false;
-            this.toolStrip_MainButton.BackColor = System.Drawing.Color.Transparent;
-            this.toolStrip_MainButton.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip_MainButton.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip_MainButton.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip_MainButton.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_OpenFile,
-            this.toolStripButton_LoadFolder,
-            this.toolStripSeparator1,
-            this.toolStripComboBox_StopMode,
-            this.toolStripButton_LoopRun,
-            this.toolStripButton_RunOnce,
-            this.toolStripButton_Stop,
-            this.toolStripButton_Up,
-            this.toolStripButton_Down,
-            this.toolStripSeparator2,
-            this.toolStripButton_TriggerIOnce,
-            this.toolStripButton_Contiue,
-            this.toolStripSeparator3,
-            this.toolStripButton_Save});
-            this.toolStrip_MainButton.Location = new System.Drawing.Point(648, 2);
-            this.toolStrip_MainButton.Name = "toolStrip_MainButton";
-            this.toolStrip_MainButton.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip_MainButton.Size = new System.Drawing.Size(960, 62);
-            this.toolStrip_MainButton.TabIndex = 0;
-            this.toolStrip_MainButton.Text = "toolStrip1";
-            this.toolStrip_MainButton.Paint += new System.Windows.Forms.PaintEventHandler(this.ToolStrip_MainButton_Paint);
-            // 
-            // toolStripButton_OpenFile
-            // 
-            this.toolStripButton_OpenFile.AutoSize = false;
-            this.toolStripButton_OpenFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_OpenFile.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_OpenFile.Image")));
-            this.toolStripButton_OpenFile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_OpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_OpenFile.Name = "toolStripButton_OpenFile";
-            this.toolStripButton_OpenFile.Size = new System.Drawing.Size(63, 63);
-            this.toolStripButton_OpenFile.Text = "Select File";
-            this.toolStripButton_OpenFile.Click += new System.EventHandler(this.ToolStripButton_OpenFile_Click);
-            // 
-            // toolStripButton_LoadFolder
-            // 
-            this.toolStripButton_LoadFolder.AutoSize = false;
-            this.toolStripButton_LoadFolder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_LoadFolder.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_LoadFolder.Image")));
-            this.toolStripButton_LoadFolder.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_LoadFolder.ImageTransparentColor = System.Drawing.Color.Maroon;
-            this.toolStripButton_LoadFolder.Name = "toolStripButton_LoadFolder";
-            this.toolStripButton_LoadFolder.Size = new System.Drawing.Size(63, 63);
-            this.toolStripButton_LoadFolder.Text = "Select Folder";
-            this.toolStripButton_LoadFolder.Click += new System.EventHandler(this.toolStripButton_LoadFolder_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripComboBox_StopMode
-            // 
-            this.toolStripComboBox_StopMode.AutoSize = false;
-            this.toolStripComboBox_StopMode.DropDownHeight = 150;
-            this.toolStripComboBox_StopMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox_StopMode.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.toolStripComboBox_StopMode.IntegralHeight = false;
-            this.toolStripComboBox_StopMode.Items.AddRange(new object[] {
-            "NG停止",
-            "OK停止",
-            "不停止"});
-            this.toolStripComboBox_StopMode.Name = "toolStripComboBox_StopMode";
-            this.toolStripComboBox_StopMode.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.toolStripComboBox_StopMode.Size = new System.Drawing.Size(110, 40);
-            this.toolStripComboBox_StopMode.ToolTipText = "Run Mode";
-            // 
-            // toolStripButton_LoopRun
-            // 
-            this.toolStripButton_LoopRun.AutoSize = false;
-            this.toolStripButton_LoopRun.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_LoopRun.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_LoopRun.Image")));
-            this.toolStripButton_LoopRun.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_LoopRun.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_LoopRun.Name = "toolStripButton_LoopRun";
-            this.toolStripButton_LoopRun.Size = new System.Drawing.Size(63, 59);
-            this.toolStripButton_LoopRun.Text = "Loop Run";
-            this.toolStripButton_LoopRun.Click += new System.EventHandler(this.toolStripButton_LoopRun_Click);
-            // 
-            // toolStripButton_RunOnce
-            // 
-            this.toolStripButton_RunOnce.AutoSize = false;
-            this.toolStripButton_RunOnce.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_RunOnce.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_RunOnce.Image")));
-            this.toolStripButton_RunOnce.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_RunOnce.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_RunOnce.Name = "toolStripButton_RunOnce";
-            this.toolStripButton_RunOnce.Size = new System.Drawing.Size(63, 59);
-            this.toolStripButton_RunOnce.Text = "Run Once";
-            this.toolStripButton_RunOnce.Click += new System.EventHandler(this.toolStripButton_RunOnce_Click);
-            // 
-            // toolStripButton_Stop
-            // 
-            this.toolStripButton_Stop.AutoSize = false;
-            this.toolStripButton_Stop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Stop.Enabled = false;
-            this.toolStripButton_Stop.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Stop.Image")));
-            this.toolStripButton_Stop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_Stop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Stop.Name = "toolStripButton_Stop";
-            this.toolStripButton_Stop.Size = new System.Drawing.Size(63, 59);
-            this.toolStripButton_Stop.Text = "Stop";
-            this.toolStripButton_Stop.Click += new System.EventHandler(this.toolStripButton_Stop_Click);
-            // 
-            // toolStripButton_Up
-            // 
-            this.toolStripButton_Up.AutoSize = false;
-            this.toolStripButton_Up.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Up.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Up.Image")));
-            this.toolStripButton_Up.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_Up.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Up.Name = "toolStripButton_Up";
-            this.toolStripButton_Up.Size = new System.Drawing.Size(56, 59);
-            this.toolStripButton_Up.Text = "Last";
-            this.toolStripButton_Up.Click += new System.EventHandler(this.toolStripButton_Up_Click);
-            // 
-            // toolStripButton_Down
-            // 
-            this.toolStripButton_Down.AutoSize = false;
-            this.toolStripButton_Down.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Down.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Down.Image")));
-            this.toolStripButton_Down.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_Down.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Down.Name = "toolStripButton_Down";
-            this.toolStripButton_Down.Size = new System.Drawing.Size(56, 59);
-            this.toolStripButton_Down.Text = "Next";
-            this.toolStripButton_Down.Click += new System.EventHandler(this.toolStripButton_Down_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripButton_TriggerIOnce
-            // 
-            this.toolStripButton_TriggerIOnce.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_TriggerIOnce.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_TriggerIOnce.Image")));
-            this.toolStripButton_TriggerIOnce.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_TriggerIOnce.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_TriggerIOnce.Name = "toolStripButton_TriggerIOnce";
-            this.toolStripButton_TriggerIOnce.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.toolStripButton_TriggerIOnce.Size = new System.Drawing.Size(69, 59);
-            this.toolStripButton_TriggerIOnce.Text = "流程运行一次";
-            this.toolStripButton_TriggerIOnce.Click += new System.EventHandler(this.toolStripButton_TriggerIOnce_Click);
-            // 
-            // toolStripButton_Contiue
-            // 
-            this.toolStripButton_Contiue.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Contiue.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Contiue.Image")));
-            this.toolStripButton_Contiue.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_Contiue.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Contiue.Name = "toolStripButton_Contiue";
-            this.toolStripButton_Contiue.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.toolStripButton_Contiue.Size = new System.Drawing.Size(69, 59);
-            this.toolStripButton_Contiue.Text = "持续流程运行";
-            this.toolStripButton_Contiue.Click += new System.EventHandler(this.toolStripButton_Contiue_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 62);
-            // 
-            // toolStripButton_Save
-            // 
-            this.toolStripButton_Save.AutoSize = false;
-            this.toolStripButton_Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Save.Image")));
-            this.toolStripButton_Save.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Save.Name = "toolStripButton_Save";
-            this.toolStripButton_Save.Size = new System.Drawing.Size(63, 59);
-            this.toolStripButton_Save.Text = "Save Param";
-            this.toolStripButton_Save.Click += new System.EventHandler(this.ToolStripButton_Save_Click);
-            // 
             // statusStrip_Status
             // 
             this.statusStrip_Status.AutoSize = false;
@@ -619,6 +436,191 @@
             this.panel_Tool.Size = new System.Drawing.Size(403, 853);
             this.panel_Tool.TabIndex = 0;
             // 
+            // toolStrip_MainButton
+            // 
+            this.toolStrip_MainButton.AutoSize = false;
+            this.toolStrip_MainButton.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip_MainButton.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip_MainButton.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip_MainButton.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip_MainButton.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton_OpenFile,
+            this.toolStripButton_LoadFolder,
+            this.toolStripSeparator1,
+            this.toolStripComboBox_StopMode,
+            this.toolStripButton_LoopRun,
+            this.toolStripButton_RunOnce,
+            this.toolStripButton_Stop,
+            this.toolStripButton_Up,
+            this.toolStripButton_Down,
+            this.toolStripSeparator2,
+            this.toolStripButton_TriggerIOnce,
+            this.toolStripButton_Contiue,
+            this.toolStripSeparator3,
+            this.toolStripButton_Save});
+            this.toolStrip_MainButton.Location = new System.Drawing.Point(648, 2);
+            this.toolStrip_MainButton.Name = "toolStrip_MainButton";
+            this.toolStrip_MainButton.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip_MainButton.Size = new System.Drawing.Size(960, 62);
+            this.toolStrip_MainButton.TabIndex = 0;
+            this.toolStrip_MainButton.Text = "toolStrip1";
+            this.toolStrip_MainButton.Paint += new System.Windows.Forms.PaintEventHandler(this.ToolStrip_MainButton_Paint);
+            // 
+            // toolStripButton_OpenFile
+            // 
+            this.toolStripButton_OpenFile.AutoSize = false;
+            this.toolStripButton_OpenFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_OpenFile.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_OpenFile.Image")));
+            this.toolStripButton_OpenFile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_OpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_OpenFile.Name = "toolStripButton_OpenFile";
+            this.toolStripButton_OpenFile.Size = new System.Drawing.Size(63, 63);
+            this.toolStripButton_OpenFile.Text = "Select File";
+            this.toolStripButton_OpenFile.Click += new System.EventHandler(this.ToolStripButton_OpenFile_Click);
+            // 
+            // toolStripButton_LoadFolder
+            // 
+            this.toolStripButton_LoadFolder.AutoSize = false;
+            this.toolStripButton_LoadFolder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_LoadFolder.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_LoadFolder.Image")));
+            this.toolStripButton_LoadFolder.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_LoadFolder.ImageTransparentColor = System.Drawing.Color.Maroon;
+            this.toolStripButton_LoadFolder.Name = "toolStripButton_LoadFolder";
+            this.toolStripButton_LoadFolder.Size = new System.Drawing.Size(63, 63);
+            this.toolStripButton_LoadFolder.Text = "Select Folder";
+            this.toolStripButton_LoadFolder.Click += new System.EventHandler(this.toolStripButton_LoadFolder_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripComboBox_StopMode
+            // 
+            this.toolStripComboBox_StopMode.AutoSize = false;
+            this.toolStripComboBox_StopMode.DropDownHeight = 150;
+            this.toolStripComboBox_StopMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox_StopMode.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.toolStripComboBox_StopMode.IntegralHeight = false;
+            this.toolStripComboBox_StopMode.Items.AddRange(new object[] {
+            "NG停止",
+            "OK停止",
+            "不停止"});
+            this.toolStripComboBox_StopMode.Name = "toolStripComboBox_StopMode";
+            this.toolStripComboBox_StopMode.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.toolStripComboBox_StopMode.Size = new System.Drawing.Size(70, 40);
+            this.toolStripComboBox_StopMode.ToolTipText = "Run Mode";
+            // 
+            // toolStripButton_LoopRun
+            // 
+            this.toolStripButton_LoopRun.AutoSize = false;
+            this.toolStripButton_LoopRun.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_LoopRun.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_LoopRun.Image")));
+            this.toolStripButton_LoopRun.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_LoopRun.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_LoopRun.Name = "toolStripButton_LoopRun";
+            this.toolStripButton_LoopRun.Size = new System.Drawing.Size(63, 59);
+            this.toolStripButton_LoopRun.Text = "Loop Run";
+            this.toolStripButton_LoopRun.Click += new System.EventHandler(this.toolStripButton_LoopRun_Click);
+            // 
+            // toolStripButton_RunOnce
+            // 
+            this.toolStripButton_RunOnce.AutoSize = false;
+            this.toolStripButton_RunOnce.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_RunOnce.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_RunOnce.Image")));
+            this.toolStripButton_RunOnce.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_RunOnce.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_RunOnce.Name = "toolStripButton_RunOnce";
+            this.toolStripButton_RunOnce.Size = new System.Drawing.Size(63, 59);
+            this.toolStripButton_RunOnce.Text = "Run Once";
+            this.toolStripButton_RunOnce.Click += new System.EventHandler(this.toolStripButton_RunOnce_Click);
+            // 
+            // toolStripButton_Stop
+            // 
+            this.toolStripButton_Stop.AutoSize = false;
+            this.toolStripButton_Stop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_Stop.Enabled = false;
+            this.toolStripButton_Stop.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Stop.Image")));
+            this.toolStripButton_Stop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_Stop.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Stop.Name = "toolStripButton_Stop";
+            this.toolStripButton_Stop.Size = new System.Drawing.Size(63, 59);
+            this.toolStripButton_Stop.Text = "Stop";
+            this.toolStripButton_Stop.Click += new System.EventHandler(this.toolStripButton_Stop_Click);
+            // 
+            // toolStripButton_Up
+            // 
+            this.toolStripButton_Up.AutoSize = false;
+            this.toolStripButton_Up.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_Up.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Up.Image")));
+            this.toolStripButton_Up.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_Up.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Up.Name = "toolStripButton_Up";
+            this.toolStripButton_Up.Size = new System.Drawing.Size(56, 59);
+            this.toolStripButton_Up.Text = "Last";
+            this.toolStripButton_Up.Click += new System.EventHandler(this.toolStripButton_Up_Click);
+            // 
+            // toolStripButton_Down
+            // 
+            this.toolStripButton_Down.AutoSize = false;
+            this.toolStripButton_Down.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_Down.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Down.Image")));
+            this.toolStripButton_Down.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_Down.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Down.Name = "toolStripButton_Down";
+            this.toolStripButton_Down.Size = new System.Drawing.Size(56, 59);
+            this.toolStripButton_Down.Text = "Next";
+            this.toolStripButton_Down.Click += new System.EventHandler(this.toolStripButton_Down_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripButton_TriggerIOnce
+            // 
+            this.toolStripButton_TriggerIOnce.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_TriggerIOnce.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_TriggerIOnce.Image")));
+            this.toolStripButton_TriggerIOnce.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_TriggerIOnce.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_TriggerIOnce.Name = "toolStripButton_TriggerIOnce";
+            this.toolStripButton_TriggerIOnce.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.toolStripButton_TriggerIOnce.Size = new System.Drawing.Size(69, 59);
+            this.toolStripButton_TriggerIOnce.Text = "流程运行一次";
+            this.toolStripButton_TriggerIOnce.Click += new System.EventHandler(this.toolStripButton_TriggerIOnce_Click);
+            // 
+            // toolStripButton_Contiue
+            // 
+            this.toolStripButton_Contiue.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_Contiue.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Contiue.Image")));
+            this.toolStripButton_Contiue.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_Contiue.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Contiue.Name = "toolStripButton_Contiue";
+            this.toolStripButton_Contiue.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.toolStripButton_Contiue.Size = new System.Drawing.Size(69, 59);
+            this.toolStripButton_Contiue.Text = "持续流程运行";
+            this.toolStripButton_Contiue.Click += new System.EventHandler(this.toolStripButton_Contiue_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 62);
+            // 
+            // toolStripButton_Save
+            // 
+            this.toolStripButton_Save.AutoSize = false;
+            this.toolStripButton_Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Save.Image")));
+            this.toolStripButton_Save.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Save.Name = "toolStripButton_Save";
+            this.toolStripButton_Save.Size = new System.Drawing.Size(63, 59);
+            this.toolStripButton_Save.Text = "Save Param";
+            this.toolStripButton_Save.Click += new System.EventHandler(this.ToolStripButton_Save_Click);
+            // 
             // FrmProjectSet
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -643,10 +645,10 @@
             this.Load += new System.EventHandler(this.FrmProjectSet_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.toolStrip_MainButton.ResumeLayout(false);
-            this.toolStrip_MainButton.PerformLayout();
             this.contextMenuStrip_ListView.ResumeLayout(false);
             this.uiTitlePanel_Tool.ResumeLayout(false);
+            this.toolStrip_MainButton.ResumeLayout(false);
+            this.toolStrip_MainButton.PerformLayout();
             this.ResumeLayout(false);
 
         }

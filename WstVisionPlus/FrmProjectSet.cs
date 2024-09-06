@@ -183,7 +183,7 @@ namespace WstVisionPlus
         {
             ToolTreeNode clickTreeNode = (ToolTreeNode)(sender as TreeNode);
             mSelectedTool = clickTreeNode.InnerTool;
-            ClickRunOnce();
+            //ClickRunOnce();
         }
 
         private void 重命名ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -867,39 +867,38 @@ namespace WstVisionPlus
                     {
                         //tool列表显示窗口
                         SetToolRunWind(ToolTreeView.ToolList);
+                        bool jumpFlag = false;
+                        ToolBase jumpTool = null;
                         OperateStatus res;
                         ToolTreeView.IsToolRunning = true;
                         foreach (var item in ToolTreeView.ToolList)
                         {
-                            ToolTreeNode iRunNode = null;
-                            foreach (TreeNode item1 in ToolTreeView.Nodes)
+                            //若跳转标志位打开且跳转工具不为空
+                            if (jumpFlag) 
                             {
-                                if (((ToolTreeNode)item1).InnerTool == item)
+                                if (jumpTool == null || jumpTool != item)
                                 {
-                                    iRunNode = (ToolTreeNode)item1;
+                                    MessageBox.Show("跳转标志位存在，但无分支条件");
                                     break;
                                 }
-                            }
-                            if (iRunNode != null)
-                            {
-                                mToolTreeView.Invoke(new Action(() =>
+                                else
                                 {
-                                    mToolTreeView.CurrRunStepNode = iRunNode;
-                                    mToolTreeView.Refresh();
-                                }));
+                                    jumpTool = null;
+                                    jumpFlag = false;
+                                }
                             }
-                            if (item != mSelectedTool && item.Type != ToolType.Camera)
-                                res = item.ToolRun(ToolTreeView.ToolList, false);
-                            else
-                                res = item.ToolRun(ToolTreeView.ToolList, true);
-
-                            if (res == OperateStatus.OK && item.Type == ToolType.Camera)
+  
+                            res = RunTools(item, out jumpTool);
+                            if (res == OperateStatus.RunElse)
                             {
-                                CameraAcqTool tool = item as CameraAcqTool;
-                                mCurrImage = tool.CurrReceiveImage.CopyObj(1, 1);
+                                //跳转标志位打开
+                                jumpFlag = true;
                             }
-                            //刷新显示
-                            RefleshToolInfo(item);
+                            else if (res == OperateStatus.Error)
+                            {
+                                //跳出循环
+                                break;
+                            }
                         }
                         ToolTreeView.IsToolRunning = false;
                         ToolTreeView.Invalidate();
@@ -990,9 +989,9 @@ namespace WstVisionPlus
             if (iBase.Type == ToolType.Camera) 
             {
                 CameraAcqTool itool = (CameraAcqTool)iBase;
-                if (itool.CurrCamera.SerialNum != null) 
+                if (itool.CurrCamera != null && itool.CurrCamera.SerialNum != null)
                 {
-                    CameraBase camera = Machine.GetInstance().CamList.Where(i => i.SerialNum == itool.CurrCamera.SerialNum).FirstOrDefault();
+                    CameraBase camera = Machine.GetInstance().CamList.Where(i => i != null && i.SerialNum == itool.CurrCamera.SerialNum).FirstOrDefault();
                     itool.CurrCamera = camera;
                 }
             }
@@ -1001,6 +1000,110 @@ namespace WstVisionPlus
                 foreach (var item in iBase.ChildToolList)
                     InitTools(item);
             }
+        }
+
+        private OperateStatus RunTools(ToolBase item, out ToolBase jumpTool)
+        {
+            jumpTool = null;
+            ToolTreeNode iRunNode = null;
+            foreach (TreeNode item1 in ToolTreeView.Nodes)
+            {
+                if (((ToolTreeNode)item1).InnerTool == item)
+                {
+                    iRunNode = (ToolTreeNode)item1;
+                    break;
+                }
+            }
+            if (iRunNode != null)
+            {
+                mToolTreeView.Invoke(new Action(() =>
+                {
+                    mToolTreeView.CurrRunStepNode = iRunNode;
+                    mToolTreeView.Refresh();
+                }));
+            }
+            OperateStatus res = 0;
+            //若当前工具非选定，且不是相机工具，则不显示运行结果至窗口
+             if (item != mSelectedTool && item.Type != ToolType.Camera)
+                res = item.ToolRun(ToolTreeView.ToolList, false);
+            else //显示运行结果至窗口
+                res = item.ToolRun(ToolTreeView.ToolList, true);
+
+            //若当前工具是相机工具，则将工具的结果提取
+            if (res == OperateStatus.OK && item.Type == ToolType.Camera)
+            {
+                CameraAcqTool tool = item as CameraAcqTool;
+                mCurrImage = tool.CurrReceiveImage.CopyObj(1, 1);
+            }
+            //若当前工具为IF 
+            //判断if工具的运行结果
+            if (item.Type == ToolType.If)
+            {
+                //若if判断为真
+                if (res == OperateStatus.RunIf)
+                {
+                    ToolBase innnerTool = null;
+                    bool jumpFlag = false;
+                    List<ToolBase> toolsInners = item.ChildToolList;
+                    foreach (ToolBase tool in toolsInners)
+                    {
+                        ToolTreeNode iRunNodeInner = null;
+                        foreach (TreeNode item1 in iRunNode.Nodes)
+                        {
+                            if (((ToolTreeNode)item1).InnerTool == tool)
+                            {
+                                iRunNodeInner = (ToolTreeNode)item1;
+                                break;
+                            }
+                        }
+                        if (iRunNodeInner != null)
+                        {
+                            mToolTreeView.Invoke(new Action(() =>
+                            {
+                                mToolTreeView.CurrRunStepNode = iRunNodeInner;
+                                mToolTreeView.Refresh();
+                            }));
+                        }
+
+                        if (jumpFlag)
+                        {
+                            if (jumpTool == null || jumpTool != item)
+                            {
+                                MessageBox.Show("跳转标志位存在，但无分支条件");
+                                break;
+                            }
+                            else
+                            {
+                                jumpTool = null;
+                                jumpFlag = false;
+                            }
+                        }
+                        //直接返回函数
+                        OperateStatus ress = RunTools(tool, out innnerTool);
+                        if (ress == OperateStatus.RunElse)
+                        {
+                            //跳转标志位打开
+                            jumpFlag = true;
+                        }
+                        else if (ress == OperateStatus.Error)
+                        {
+                            //跳出循环
+                            break;
+                        }
+                    }
+                }
+                //跳转至else
+                else
+                {
+                    IfTool tool = item as IfTool;
+                    if (tool != null) 
+                        jumpTool = tool.BingdingTool;
+                    return OperateStatus.RunElse;
+                }
+            }
+            //刷新显示
+            RefleshToolInfo(item);
+            return OperateStatus.OK;
         }
     }
 }

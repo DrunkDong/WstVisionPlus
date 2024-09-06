@@ -18,6 +18,7 @@ namespace WstControls
         If = 8,
         Else = 9,
         Camera = 10,
+        For = 11,
         None = 999
     }
 
