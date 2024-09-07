@@ -461,15 +461,37 @@ namespace WstVisionPlus
             mWindow.ClearWindow();
             if (ToolTreeView.ToolList.Count > 0)
             {
+                mWindow.ClearWindow();
                 if (mSelectedTool != null)
                 {
-                    //正在运行标志打开
-                    ToolTreeView.IsToolRunning = true;
                     //tool列表显示窗口
                     SetToolRunWind(ToolTreeView.ToolList);
+                    bool jumpFlag = false;
+                    bool isContinue = false;
+                    ToolBase jumpTool = null;
                     OperateStatus res;
+                    ToolTreeView.IsToolRunning = true;
                     foreach (var item in ToolTreeView.ToolList)
                     {
+                        //若跳转标志位打开且跳转工具不为空
+                        if (jumpFlag)
+                        {
+                            if (jumpTool == null || jumpTool.ToolID != item.ToolID)
+                            {
+                                MessageBox.Show("跳转标志位存在，但无分支条件");
+                                break;
+                            }
+                            else
+                            {
+                                jumpTool = null;
+                                jumpFlag = false;
+                            }
+                        }
+                        if (isContinue)
+                        {
+                            isContinue = false;
+                            continue;
+                        }
                         ToolTreeNode iRunNode = null;
                         foreach (TreeNode item1 in ToolTreeView.Nodes)
                         {
@@ -487,20 +509,24 @@ namespace WstVisionPlus
                                 mToolTreeView.Refresh();
                             }));
                         }
-                        if (item != mSelectedTool && item.Type != ToolType.Camera)
-                            res = item.ToolRun(ToolTreeView.ToolList, false);
-                        else
-                            res = item.ToolRun(ToolTreeView.ToolList, true);
-                        if (res == OperateStatus.Break)
+                        res = RunTools(iRunNode, item, out jumpTool);
+                        if (res == OperateStatus.RunElse)
                         {
-                            ToolTreeView.IsToolRunning = false;
-                            return 0;
+                            //跳转标志位打开
+                            jumpFlag = true;
                         }
-                        //刷新显示
-                        RefleshToolInfo(item);
+                        else if (res == OperateStatus.Error || res == OperateStatus.Break)
+                        {
+                            //跳出循环
+                            break;
+                        }
+                        else if (res == OperateStatus.EndIf)
+                        {
+                            isContinue = true;
+                        }
                     }
-                    //正在运行标志取消
                     ToolTreeView.IsToolRunning = false;
+                    ToolTreeView.Invalidate();
                 }
                 if (IsHandleCreated)
                     mToolTreeView.Invoke(new Action(() => { mToolTreeView.Invalidate(); }));
@@ -728,23 +754,72 @@ namespace WstVisionPlus
                     }
                 }
                 //运行工具
+                mWindow.ClearWindow();
                 if (mSelectedTool != null)
                 {
                     //tool列表显示窗口
                     SetToolRunWind(ToolTreeView.ToolList);
+                    bool jumpFlag = false;
+                    bool isContinue = false;
+                    ToolBase jumpTool = null;
                     OperateStatus res;
+                    ToolTreeView.IsToolRunning = true;
                     foreach (var item in ToolTreeView.ToolList)
                     {
-                        if (item.Type != ToolType.Camera)
+                        //若跳转标志位打开且跳转工具不为空
+                        if (jumpFlag)
                         {
-                            if (item != mSelectedTool)
-                                res = item.ToolRun(ToolTreeView.ToolList, false);
+                            if (jumpTool == null || jumpTool.ToolID != item.ToolID)
+                            {
+                                MessageBox.Show("跳转标志位存在，但无分支条件");
+                                break;
+                            }
                             else
-                                res = item.ToolRun(ToolTreeView.ToolList, true);
-                            //刷新显示
-                            RefleshToolInfo(item);
+                            {
+                                jumpTool = null;
+                                jumpFlag = false;
+                            }
+                        }
+                        if (isContinue)
+                        {
+                            isContinue = false;
+                            continue;
+                        }
+                        ToolTreeNode iRunNode = null;
+                        foreach (TreeNode item1 in ToolTreeView.Nodes)
+                        {
+                            if (((ToolTreeNode)item1).InnerTool == item)
+                            {
+                                iRunNode = (ToolTreeNode)item1;
+                                break;
+                            }
+                        }
+                        if (iRunNode != null)
+                        {
+                            mToolTreeView.Invoke(new Action(() =>
+                            {
+                                mToolTreeView.CurrRunStepNode = iRunNode;
+                                mToolTreeView.Refresh();
+                            }));
+                        }
+                        res = RunTools(iRunNode, item, out jumpTool);
+                        if (res == OperateStatus.RunElse)
+                        {
+                            //跳转标志位打开
+                            jumpFlag = true;
+                        }
+                        else if (res == OperateStatus.Error || res == OperateStatus.Break)
+                        {
+                            //跳出循环
+                            break;
+                        }
+                        else if (res == OperateStatus.EndIf)
+                        {
+                            isContinue = true;
                         }
                     }
+                    ToolTreeView.IsToolRunning = false;
+                    ToolTreeView.Invalidate();
                 }
                 if (IsHandleCreated)
                     mToolTreeView.Invoke(new Action(() => { mToolTreeView.Invalidate(); }));
