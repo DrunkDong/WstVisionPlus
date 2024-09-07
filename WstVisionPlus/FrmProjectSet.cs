@@ -120,7 +120,7 @@ namespace WstVisionPlus
             e.Graphics.SetClip(rect);
         }
 
-        private void ToolStripButton_OpenFile_Click(object sender, EventArgs e)
+        private async void ToolStripButton_OpenFile_Click(object sender, EventArgs e)
         {
             string nPath = "";
             OpenFileDialog openfiledialog1 = new OpenFileDialog();
@@ -139,7 +139,7 @@ namespace WstVisionPlus
                 CurrImage = image;
                 mWindow.DispImage(mCurrImage);
                 //运行一次
-                ClickRunOnce();
+                await Task.Run(new Action(() => { ClickRunOnce(); }));
             }
         }
 
@@ -276,7 +276,7 @@ namespace WstVisionPlus
             autoEv.Set();
         }
 
-        private void toolStripButton_LoadFolder_Click(object sender, EventArgs e)
+        private async void toolStripButton_LoadFolder_Click(object sender, EventArgs e)
         {
             mImagePathList = new List<string>();
             string dir = "";
@@ -305,13 +305,13 @@ namespace WstVisionPlus
                         CurrImage = image;
                         mWindow.DispImage(image);
                         //运行一次
-                        ClickRunOnce();
+                        await Task.Run(new Action(() => { ClickRunOnce(); }));                       
                     }
                 }
             }
         }
 
-        private void toolStripButton_Up_Click(object sender, EventArgs e)
+        private async void toolStripButton_Up_Click(object sender, EventArgs e)
         {
             if (mImagePathList.Count == 0)
                 return;
@@ -324,14 +324,14 @@ namespace WstVisionPlus
             mWindow.IsMove = false;
             HObject image;
             HOperatorSet.ReadImage(out image, mImagePathList[mPicIndex]);
-            mMessageView.OutputMsg($"read image success! image index[{mPicIndex + 1}] {mImagePathList[mPicIndex]}");
+            mMessageView.OutputMsg($"image index[{mPicIndex + 1}] {mImagePathList[mPicIndex]}");
             CurrImage = image;
             mWindow.DispImage(image);
             //运行一次
-            ClickRunOnce();
+            await Task.Run(new Action(() => { ClickRunOnce(); }));
         }
 
-        private void toolStripButton_Down_Click(object sender, EventArgs e)
+        private async void toolStripButton_Down_Click(object sender, EventArgs e)
         {
             if (mImagePathList.Count == 0)
                 return;
@@ -345,11 +345,11 @@ namespace WstVisionPlus
             mWindow.IsMove = false;
             HObject image;
             HOperatorSet.ReadImage(out image, mImagePathList[mPicIndex]);
-            mMessageView.OutputMsg($"read image success! image index[{mPicIndex + 1}] {mImagePathList[mPicIndex]}");
+            mMessageView.OutputMsg($"image index[{mPicIndex + 1}] {mImagePathList[mPicIndex]}");
             CurrImage = image;
             mWindow.DispImage(image);
             //运行一次
-            ClickRunOnce();
+            await Task.Run(new Action(() => { ClickRunOnce(); }));
         }
 
         private void LoopImageFromFiles()
@@ -446,6 +446,7 @@ namespace WstVisionPlus
         {
             if (!HObjectHelper.ObjectValided(mCurrImage))
                 return 1;
+            mWindow.ClearWindow();
             mWindow.DispImage(mCurrImage);
             //传入图片源
             foreach (var item in ToolTreeView.ToolList)
@@ -458,10 +459,8 @@ namespace WstVisionPlus
                     break;
                 }
             }
-            mWindow.ClearWindow();
             if (ToolTreeView.ToolList.Count > 0)
             {
-                mWindow.ClearWindow();
                 if (mSelectedTool != null)
                 {
                     //tool列表显示窗口
@@ -736,12 +735,13 @@ namespace WstVisionPlus
 
         private void ClickRunOnce()
         {
+            mWindow.ClearWindow();
+            mWindow.Invoke(new Action(() => { mWindow.DispImage(mCurrImage); }));
             if (ToolTreeView.ToolList.Count > 0)
             {
-                mWindow.ClearWindow();
                 //判断当前图片
                 if (!HObjectHelper.ObjectValided(mCurrImage))
-                    return;
+                    return;          
                 //传入图片源
                 foreach (var item in ToolTreeView.ToolList)
                 {
@@ -749,12 +749,10 @@ namespace WstVisionPlus
                     {
                         CameraAcqTool acqTool = (CameraAcqTool)item;
                         acqTool.FolderImageQueue.Enqueue(mCurrImage.CopyObj(1, 1));
-                        mWindow.DispImage(mCurrImage);
                         break;
                     }
                 }
                 //运行工具
-                mWindow.ClearWindow();
                 if (mSelectedTool != null)
                 {
                     //tool列表显示窗口

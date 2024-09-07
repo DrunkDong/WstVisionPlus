@@ -318,7 +318,7 @@ namespace WstControls
         /// <param name="externalNode">输入的节点</param>
         private void AddNewToolNodes(TreeNode externalNode, ToolTreeNode mouseMoveNote)
         {
-            //若添加的工具为  if   else
+            //若添加的工具为  if和else
             if (externalNode.Text.Contains("If") && externalNode.Text.Contains("Else"))
             {
                 //生成工具
@@ -580,10 +580,50 @@ namespace WstControls
         {
             if (toolView.SelectedNode != null)
             {
-                //删除工具
-                DeleTool(((ToolTreeNode)toolView.SelectedNode).InnerTool, ToolList);
-                //删除节点
-                toolView.Nodes.Remove(toolView.SelectedNode);
+                ToolBase iTool = ((ToolTreeNode)toolView.SelectedNode).InnerTool;
+                if (iTool.Type != ToolType.If && iTool.Type != ToolType.Else)
+                {
+                    //删除工具
+                    DeleTool(iTool, ToolList);
+                    //删除节点
+                    toolView.Nodes.Remove(toolView.SelectedNode);
+                }
+                //若工具为if
+                else if (iTool.Type == ToolType.If)
+                {                    
+                    //判断是否有关联的else工具
+                    if (iTool.BingdingTool != null)
+                    {
+                        TreeNode nextNode = toolView.SelectedNode.NextNode;
+                        //删除if工具
+                        DeleTool(iTool, ToolList);
+                        //删除if节点
+                        toolView.Nodes.Remove(toolView.SelectedNode);
+
+                        //删除else工具
+                        DeleTool(iTool.BingdingTool, ToolList);
+                        //删除else节点
+                        toolView.Nodes.Remove(nextNode);
+                    }
+                    else
+                    {
+                        //删除if工具
+                        DeleTool(iTool, ToolList);
+                        //删除if节点
+                        toolView.Nodes.Remove(toolView.SelectedNode);
+                    }
+                }
+                else if (iTool.Type == ToolType.Else)
+                {
+                    ToolBase itool = iTool.BingdingTool;
+                    //删除else工具
+                    DeleTool(iTool, ToolList);
+                    //删除else节点
+                    toolView.Nodes.Remove(toolView.SelectedNode);
+                    //关联工具删除
+                    itool.BingdingTool = null;
+                }
+
                 //事件发送
                 NodeDeleClick?.Invoke(sender, e);
             }

@@ -22,7 +22,7 @@ namespace WstControls
 
         public override OperateStatus ToolRun(List<ToolBase> toolList, bool mIsShowResult)
         {
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(100);
             return OperateStatus.ExcuteElse;
         }
 

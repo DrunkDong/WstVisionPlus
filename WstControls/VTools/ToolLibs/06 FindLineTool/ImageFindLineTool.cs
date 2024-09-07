@@ -128,7 +128,7 @@ namespace WstControls
 
         public override OperateStatus ToolRun(List<ToolBase> toolList, bool mIsShowResult)
         {
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(100);
             if (mIsShowResult)
             {
                 //初始化窗口和所有集合

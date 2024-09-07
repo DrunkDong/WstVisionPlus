@@ -180,7 +180,7 @@ namespace WstControls
         {
             try
             {
-                System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep(100);
                 //获取图像输入源
                 CostTime = 0;
                 HOperatorSet.CountSeconds(out HTuple s1);
