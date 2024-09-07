@@ -107,7 +107,7 @@ namespace WstControls
                 mReceiveImage = true;
                 while (mReceiveImage) 
                 {                 
-                    mReceiveEvent.WaitOne(500);
+                    mReceiveEvent.WaitOne(50);
                     //工具强制停止
                     if (!mReceiveImage)
                         break;

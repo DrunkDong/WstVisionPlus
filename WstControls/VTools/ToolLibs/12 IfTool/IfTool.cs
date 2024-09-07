@@ -25,7 +25,7 @@ namespace WstControls
         public override OperateStatus ToolRun(List<ToolBase> toolList, bool mIsShowResult)
         {
             System.Threading.Thread.Sleep(1000);
-            return OperateStatus.RunIf;
+            return OperateStatus.RunElse;
         }
 
         public override void RefreshToolSource(List<ToolBase> toolList)

@@ -13,6 +13,8 @@ namespace WstCommonTools
         Virtual = 1,
         Break = 2,
         RunIf = 3,
-        RunElse = 4
+        RunElse = 4,
+        ExcuteElse = 5,
+        EndIf = 6
     }
 }
