@@ -643,7 +643,7 @@ namespace WstVisionPlus
             switch (type)
             {
                 case ToolType.TransImage:
-                    Frm_ImageConvert tool1 = new Frm_ImageConvert();
+                    Frm_ImageConvertTool tool1 = new Frm_ImageConvertTool();
                     tool1.Tool = (ImageConvertTool)tool;
                     tool1.Tool.DebugWind = mWindow;
                     tool1.Text = tool.ShowName;

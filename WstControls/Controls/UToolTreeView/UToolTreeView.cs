@@ -615,6 +615,7 @@ namespace WstControls
                 }
                 else if (iTool.Type == ToolType.Else)
                 {
+                    //获取关联工具
                     ToolBase itool = iTool.BingdingTool;
                     //删除else工具
                     DeleTool(iTool, ToolList);

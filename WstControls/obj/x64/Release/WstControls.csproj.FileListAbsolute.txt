@@ -125,7 +125,6 @@ D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.U
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.HShowWindow.resources
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.UMessageListView.resources
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.UTreeTools.resources
-D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.Frm_ImageConvert.resources
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.Frm_ImageBlob.resources
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.Frm_EditShapeModel.resources
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.Frm_ShapeModel.resources
@@ -150,3 +149,7 @@ D:\002------GitWorkSpace\WstVisionPlus\WstControls\bin\x64\Release\WstCommonTool
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstContr.AF9A1D4F.Up2Date
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.dll
 D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.pdb
+D:\002------GitWorkSpace\WstVisionPlus\WstControls\bin\x64\Release\ScintillaNET.dll
+D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.FrmScriptCode.resources
+D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.Frm_IfTool.resources
+D:\002------GitWorkSpace\WstVisionPlus\WstControls\obj\x64\Release\WstControls.Frm_ImageConvertTool.resources

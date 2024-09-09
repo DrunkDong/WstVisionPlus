@@ -12,7 +12,7 @@ using HalconDotNet;
 
 namespace WstControls
 {
-    public partial class Frm_ImageConvert : UIForm, FrmInterface
+    public partial class Frm_ImageConvertTool : UIForm, FrmInterface
     {
         HDrawingObject selected_drawing_object;
         List<HDrawingObject> objList = new List<HDrawingObject>();
@@ -29,7 +29,7 @@ namespace WstControls
             get => tool;
             set => tool = value;
         }
-        public Frm_ImageConvert()
+        public Frm_ImageConvertTool()
         {
             InitializeComponent();
             Window.Size = panel1.Size;

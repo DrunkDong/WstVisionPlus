@@ -182,3 +182,4 @@ D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\obj\x64\Release\en\WstVisio
 D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\obj\x64\Release\WstVisio.75E1687B.Up2Date
 D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\obj\x64\Release\WstVisionPlus.exe
 D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\obj\x64\Release\WstVisionPlus.pdb
+D:\002------GitWorkSpace\WstVisionPlus\WstVisionPlus\bin\x64\Release\ScintillaNET.dll

@@ -2,7 +2,7 @@
 
 namespace WstControls
 {
-    partial class Frm_ImageConvert
+    partial class Frm_ImageConvertTool
     {
         /// <summary>
         /// Required designer variable.
