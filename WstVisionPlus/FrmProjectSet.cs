@@ -723,13 +723,13 @@ namespace WstVisionPlus
         {
             foreach (var item in mMachine.CamList)
             {
-                item.SetCameraMode(TriggerMode.Mode_Trigger);
-                item.SetTriggerSource(TriggerSource.Software);
-                item.StartGrab();
-            }
-            foreach (var item in mMachine.CamList)
-            {
-                item.SoftTrigger();
+                if (item!=null)
+                {
+                    item.SetCameraMode(TriggerMode.Mode_Trigger);
+                    item.SetTriggerSource(TriggerSource.Software);
+                    item.StartGrab();
+                    item.SoftTrigger();
+                }
             }
         }
 
