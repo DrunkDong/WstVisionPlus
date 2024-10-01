@@ -617,12 +617,12 @@ namespace WstControls
                 {
                     //获取关联工具
                     ToolBase itool = iTool.BingdingTool;
+                    //关联工具删除
+                    itool.BingdingTool = null;
                     //删除else工具
                     DeleTool(iTool, ToolList);
                     //删除else节点
                     toolView.Nodes.Remove(toolView.SelectedNode);
-                    //关联工具删除
-                    itool.BingdingTool = null;
                 }
 
                 //事件发送

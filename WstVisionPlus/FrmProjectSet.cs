@@ -187,26 +187,6 @@ namespace WstVisionPlus
             //ClickRunOnce();
         }
 
-        private void 重命名ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void 上移ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void 下移ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SwitchBtn(object sender, EventArgs e)
         {
             try

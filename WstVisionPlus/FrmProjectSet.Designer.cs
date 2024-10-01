@@ -387,28 +387,24 @@
             this.上移ToolStripMenuItem.Name = "上移ToolStripMenuItem";
             this.上移ToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.上移ToolStripMenuItem.Text = "Move Up";
-            this.上移ToolStripMenuItem.Click += new System.EventHandler(this.上移ToolStripMenuItem_Click);
             // 
             // 下移ToolStripMenuItem
             // 
             this.下移ToolStripMenuItem.Name = "下移ToolStripMenuItem";
             this.下移ToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.下移ToolStripMenuItem.Text = "Move Down";
-            this.下移ToolStripMenuItem.Click += new System.EventHandler(this.下移ToolStripMenuItem_Click);
             // 
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
             this.删除ToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.删除ToolStripMenuItem.Text = "Delete";
-            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // 重命名ToolStripMenuItem
             // 
             this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
             this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.重命名ToolStripMenuItem.Text = "ReName";
-            this.重命名ToolStripMenuItem.Click += new System.EventHandler(this.重命名ToolStripMenuItem_Click);
             // 
             // uiTitlePanel_Tool
             // 
