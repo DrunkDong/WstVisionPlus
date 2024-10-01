@@ -1067,6 +1067,8 @@ namespace WstVisionPlus
             if (!File.Exists(path))
                 return;
             ToolOP.ReadToolList(path, out toolsList);
+            //重新绑定关联工具
+            BingTools(toolsList);
             if (toolsList.Count > 0)
             {
                 //加载tools
@@ -1082,6 +1084,37 @@ namespace WstVisionPlus
                 mToolTreeView.Invalidate();
             }
         }
+
+        private void BingTools(List<ToolBase> toolsList)
+        {
+            foreach (ToolBase item in toolsList)
+            {
+                if (item.BingdingTool != null) 
+                {
+                    ToolBase tool = FindBingTool(toolsList, item.BingdingTool.ToolID);
+                    if (tool != null) 
+                        item.BingdingTool= tool;
+                    else 
+                        item.BingdingTool= null;
+
+                    if (item.ChildToolList.Count > 0) 
+                    {
+                        BingTools(item.ChildToolList);
+                    }
+                }
+            }
+        }
+        private ToolBase FindBingTool(List<ToolBase> innerToolsList, int toolMark)
+        {
+            foreach (ToolBase item in innerToolsList)
+            {
+                if (item.ToolID == toolMark)
+                {
+                    return item; 
+                }
+            }
+            return null;    
+        }    
 
         private void InitTools(ToolBase iBase)
         {
