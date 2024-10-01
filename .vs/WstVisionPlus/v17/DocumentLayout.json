@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\002------GitWorkSpace\\WstVisionPlus\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstcontrols\\controls\\utooltreeview\\utooltreeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\controls\\utooltreeview\\utooltreeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|d:\\002------gitworkspace\\wstvisionplus\\wstcontrols\\vtools\\toollibs\\16 scriptcodetool\\frmscriptcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{416E10D9-ED71-4FF8-A19E-6C369025AB3C}|WstControls\\WstControls.csproj|solutionrelative:wstcontrols\\vtools\\toollibs\\16 scriptcodetool\\frmscriptcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UToolTreeView.cs",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
+              "RelativeDocumentMoniker": "WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
+              "RelativeToolTip": "WstControls\\Controls\\UToolTreeView\\UToolTreeView.cs",
+              "ViewState": "AQIAAGUCAAAAAAAAAAD4v90AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:34:38.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmScriptCode.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\ToolLibs\\16 ScriptCodeTool\\FrmScriptCode.cs",
+              "RelativeDocumentMoniker": "WstControls\\VTools\\ToolLibs\\16 ScriptCodeTool\\FrmScriptCode.cs",
+              "ToolTip": "D:\\002------GitWorkSpace\\WstVisionPlus\\WstControls\\VTools\\ToolLibs\\16 ScriptCodeTool\\FrmScriptCode.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "WstControls\\VTools\\ToolLibs\\16 ScriptCodeTool\\FrmScriptCode.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:35:06.769Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
